@@ -19,12 +19,13 @@ from callbacks import get_callback
 
 
 shapefile = 'data/countries_110m/ne_110m_admin_0_countries.shp'
-datafile = 'data/aqi_df.csv'
+datafile1 = 'data/cases_per_weeks_bokeh.csv'
+datafile2 = 'data/deaths_per_weeks_bokeh.csv'
 
-replacements = {'UK':'United Kingdom',
-               'USA':'United States of America',
-               'Serbia':'Republic of Serbia',
-               'Czech Republic':'Czechia'}
+replacements = {'US':'United States of America',
+               'Korea, South':'South Korea',
+               'Taiwan*':'Taiwan',
+               'Serbia': 'Republic of Serbia'}
 
 gdf = gpd.read_file(shapefile)[['ADMIN', 'ADM0_A3', 'geometry']]
 gdf.columns = ['country', 'country_code', 'geometry']
@@ -32,32 +33,17 @@ gdf.columns = ['country', 'country_code', 'geometry']
 gdf = gdf.drop(gdf.index[159]) # Antarctica
 gdf.head()
 
-data = pd.read_csv(datafile)
-tmp = []
-for x in data['NO2']:
-    if np.isnan(x):
-        tmp.append(x)
-    else:
-        tmp.append(int(x))
-data['NO2'] = tmp
-
-tmp = []
-for x in data['PM2.5']:
-    if np.isnan(x):
-        tmp.append(x)
-    else:
-        tmp.append(int(x))
-data['PM2.5'] = tmp
+data1 = pd.read_csv(datafile1)
+data2 = pd.read_csv(datafile2)
 
 for c in replacements:
-    data['country'].replace(c, replacements[c], inplace=True)
-print(data.head())
+    data1['country'].replace(c, replacements[c], inplace=True)
+    data2['country'].replace(c, replacements[c], inplace=True)
 
-def get_NO2_plot():
-    merged_df = gdf.merge(data, on='country', how='left')
+
+def get_cases_plot():
+    merged_df = gdf.merge(data1, on='country', how='left')
     merged_df['week'].fillna(-1, inplace=True)
-    merged_df['NO2'].fillna("No Data", inplace=True)
-    merged_df['PM2.5'].fillna("No Data", inplace=True)
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -68,24 +54,25 @@ def get_NO2_plot():
         return json_data
 
     # Input GeoJSON source that contains features for plotting.
-    geosource = GeoJSONDataSource(geojson=json_data(0))
+    geosource = GeoJSONDataSource(geojson=json_data(4))
 
     # Define a sequential multi-hue color palette.
     palette = mpl['Magma'][256]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['NO2']), nan_color='#d9d9d9')
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data1['count'])*0.5, nan_color='#d9d9d9')
+
 
     # Add hover tool
-    hover = HoverTool(tooltips=[('Country/region', '@country'), ('NO2', '@NO2')], callback=get_callback('hover_cursor'))
+    hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@count')], callback=get_callback('hover_cursor'))
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8, width=20, height=500,
                          border_line_color=None, location=(0, 0), orientation='vertical')
 
     # Create figure object.
-    p = figure(title='NO2 concentration from the 1st week of 2020', plot_height=550, plot_width=1100,
+    p = figure(title='Confirmed COVID-19 cases since the 4th week of 2020', plot_height=550, plot_width=1100,
                toolbar_location=None,
                tools=[hover])
     p.xgrid.grid_line_color = None
@@ -93,31 +80,20 @@ def get_NO2_plot():
     p.axis.visible = False
 
     # Add patch renderer to figure.
-    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'NO2', 'transform': color_mapper},
+    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'count', 'transform': color_mapper},
               line_color='black', line_width=0.25, fill_alpha=1)
-
-
-    #x = [-170]
-    #y = [-50]
-    #s = ["100pt"]
-    #a = "sample"
-    #text = [a]
-    #source = ColumnDataSource(dict(x=x, y=y, text=text, size=s))
-    #glyph = Text(x="x", y="y", text="text", text_font_size="size", angle=0, text_color="#96deb3")
-    #p.add_glyph(source, glyph)
-
 
     p.add_layout(color_bar, 'right')
 
-    Overall = ColumnDataSource(data)
-    Curr = ColumnDataSource(data[data['week'] == 0])
+    Overall = ColumnDataSource(data1)
+    Curr = ColumnDataSource(data1[data1['week'] == 4])
 
-    callback = get_callback('NO2_slider', [Overall, Curr])
+    callback = get_callback('dark_slider', [Overall, Curr])
 
-    animate = get_callback('climate_play_button')
+    animate = get_callback('dark_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=0, end=11, step=1, value=0, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=4, end=13, step=1, value=4, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p
@@ -134,11 +110,9 @@ def get_NO2_plot():
     return script, div
 
 
-def get_PM25_plot():
-    merged_df = gdf.merge(data, on='country', how='left')
+def get_deaths_plot():
+    merged_df = gdf.merge(data2, on='country', how='left')
     merged_df['week'].fillna(-1, inplace=True)
-    merged_df['NO2'].fillna("No Data", inplace=True)
-    merged_df['PM2.5'].fillna("No Data", inplace=True)
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -149,24 +123,25 @@ def get_PM25_plot():
         return json_data
 
     # Input GeoJSON source that contains features for plotting.
-    geosource = GeoJSONDataSource(geojson=json_data(0))
+    geosource = GeoJSONDataSource(geojson=json_data(4))
 
     # Define a sequential multi-hue color palette.
     palette = mpl['Magma'][256]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['PM2.5']), nan_color='#d9d9d9')
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data2['count'])*0.5, nan_color='#d9d9d9')
+
 
     # Add hover tool
-    hover = HoverTool(tooltips=[('Country/region', '@country'), ('PM2.5', '@PM2.5')], callback=get_callback('hover_cursor'))
+    hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@count')], callback=get_callback('hover_cursor'))
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8, width=20, height=500,
                          border_line_color=None, location=(0, 0), orientation='vertical')
 
     # Create figure object.
-    p = figure(title='PM2.5 concentration from the 1st week of 2020', plot_height=550, plot_width=1100,
+    p = figure(title='Deaths due to COVID-19 since the 4th week of 2020', plot_height=550, plot_width=1100,
                toolbar_location=None,
                tools=[hover])
     p.xgrid.grid_line_color = None
@@ -174,20 +149,20 @@ def get_PM25_plot():
     p.axis.visible = False
 
     # Add patch renderer to figure.
-    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'PM2.5', 'transform': color_mapper},
+    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'count', 'transform': color_mapper},
               line_color='black', line_width=0.25, fill_alpha=1)
 
     p.add_layout(color_bar, 'right')
 
-    Overall = ColumnDataSource(data)
-    Curr = ColumnDataSource(data[data['week'] == 0])
+    Overall = ColumnDataSource(data2)
+    Curr = ColumnDataSource(data2[data2['week'] == 4])
 
-    callback = get_callback('PM25_slider', [Overall, Curr])
+    callback = get_callback('dark_slider', [Overall, Curr])
 
-    animate = get_callback('climate_play_button')
+    animate = get_callback('dark_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=0, end=11, step=1, value=0, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=4, end=13, step=1, value=4, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p

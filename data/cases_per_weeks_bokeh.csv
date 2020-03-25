@@ -1,0 +1,1701 @@
+,country,week,count
+0,Afghanistan,4,0
+1,Albania,4,0
+2,Algeria,4,0
+3,Andorra,4,0
+4,Angola,4,0
+5,Antigua and Barbuda,4,0
+6,Argentina,4,0
+7,Armenia,4,0
+8,Australia,4,4
+9,Austria,4,0
+10,Azerbaijan,4,0
+11,Bahamas,4,0
+12,Bahrain,4,0
+13,Bangladesh,4,0
+14,Barbados,4,0
+15,Belarus,4,0
+16,Belgium,4,0
+17,Belize,4,0
+18,Benin,4,0
+19,Bhutan,4,0
+20,Bolivia,4,0
+21,Bosnia and Herzegovina,4,0
+22,Brazil,4,0
+23,Brunei,4,0
+24,Bulgaria,4,0
+25,Burkina Faso,4,0
+26,Cabo Verde,4,0
+27,Cambodia,4,0
+28,Cameroon,4,0
+29,Canada,4,1
+30,Central African Republic,4,0
+31,Chad,4,0
+32,Chile,4,0
+33,China,4,2075
+34,Colombia,4,0
+35,Congo (Brazzaville),4,0
+36,Congo (Kinshasa),4,0
+37,Costa Rica,4,0
+38,Cote d'Ivoire,4,0
+39,Croatia,4,0
+40,Cuba,4,0
+41,Cyprus,4,0
+42,Czechia,4,0
+43,Denmark,4,0
+44,Diamond Princess,4,0
+45,Djibouti,4,0
+46,Dominica,4,0
+47,Dominican Republic,4,0
+48,Ecuador,4,0
+49,Egypt,4,0
+50,El Salvador,4,0
+51,Equatorial Guinea,4,0
+52,Eritrea,4,0
+53,Estonia,4,0
+54,Eswatini,4,0
+55,Ethiopia,4,0
+56,Fiji,4,0
+57,Finland,4,0
+58,France,4,3
+59,Gabon,4,0
+60,Gambia,4,0
+61,Georgia,4,0
+62,Germany,4,0
+63,Ghana,4,0
+64,Greece,4,0
+65,Grenada,4,0
+66,Guatemala,4,0
+67,Guinea,4,0
+68,Guyana,4,0
+69,Haiti,4,0
+70,Holy See,4,0
+71,Honduras,4,0
+72,Hungary,4,0
+73,Iceland,4,0
+74,India,4,0
+75,Indonesia,4,0
+76,Iran,4,0
+77,Iraq,4,0
+78,Ireland,4,0
+79,Israel,4,0
+80,Italy,4,0
+81,Jamaica,4,0
+82,Japan,4,4
+83,Jordan,4,0
+84,Kazakhstan,4,0
+85,Kenya,4,0
+86,"Korea, South",4,3
+87,Kuwait,4,0
+88,Kyrgyzstan,4,0
+89,Laos,4,0
+90,Latvia,4,0
+91,Lebanon,4,0
+92,Liberia,4,0
+93,Libya,4,0
+94,Liechtenstein,4,0
+95,Lithuania,4,0
+96,Luxembourg,4,0
+97,Madagascar,4,0
+98,Malaysia,4,4
+99,Maldives,4,0
+100,Malta,4,0
+101,Mauritania,4,0
+102,Mauritius,4,0
+103,Mexico,4,0
+104,Moldova,4,0
+105,Monaco,4,0
+106,Mongolia,4,0
+107,Montenegro,4,0
+108,Morocco,4,0
+109,Mozambique,4,0
+110,Namibia,4,0
+111,Nepal,4,1
+112,Netherlands,4,0
+113,New Zealand,4,0
+114,Nicaragua,4,0
+115,Niger,4,0
+116,Nigeria,4,0
+117,North Macedonia,4,0
+118,Norway,4,0
+119,Oman,4,0
+120,Pakistan,4,0
+121,Panama,4,0
+122,Papua New Guinea,4,0
+123,Paraguay,4,0
+124,Peru,4,0
+125,Philippines,4,0
+126,Poland,4,0
+127,Portugal,4,0
+128,Qatar,4,0
+129,Romania,4,0
+130,Russia,4,0
+131,Rwanda,4,0
+132,Saint Lucia,4,0
+133,Saint Vincent and the Grenadines,4,0
+134,San Marino,4,0
+135,Saudi Arabia,4,0
+136,Senegal,4,0
+137,Serbia,4,0
+138,Seychelles,4,0
+139,Singapore,4,4
+140,Slovakia,4,0
+141,Slovenia,4,0
+142,Somalia,4,0
+143,South Africa,4,0
+144,Spain,4,0
+145,Sri Lanka,4,0
+146,Sudan,4,0
+147,Suriname,4,0
+148,Sweden,4,0
+149,Switzerland,4,0
+150,Syria,4,0
+151,Taiwan*,4,4
+152,Tanzania,4,0
+153,Thailand,4,8
+154,Timor-Leste,4,0
+155,Togo,4,0
+156,Trinidad and Tobago,4,0
+157,Tunisia,4,0
+158,Turkey,4,0
+159,US,4,5
+160,Uganda,4,0
+161,Ukraine,4,0
+162,United Arab Emirates,4,0
+163,United Kingdom,4,0
+164,Uruguay,4,0
+165,Uzbekistan,4,0
+166,Venezuela,4,0
+167,Vietnam,4,2
+168,Zambia,4,0
+169,Zimbabwe,4,0
+170,Afghanistan,5,0
+171,Albania,5,0
+172,Algeria,5,0
+173,Andorra,5,0
+174,Angola,5,0
+175,Antigua and Barbuda,5,0
+176,Argentina,5,0
+177,Armenia,5,0
+178,Australia,5,12
+179,Austria,5,0
+180,Azerbaijan,5,0
+181,Bahamas,5,0
+182,Bahrain,5,0
+183,Bangladesh,5,0
+184,Barbados,5,0
+185,Belarus,5,0
+186,Belgium,5,0
+187,Belize,5,0
+188,Benin,5,0
+189,Bhutan,5,0
+190,Bolivia,5,0
+191,Bosnia and Herzegovina,5,0
+192,Brazil,5,0
+193,Brunei,5,0
+194,Bulgaria,5,0
+195,Burkina Faso,5,0
+196,Cabo Verde,5,0
+197,Cambodia,5,1
+198,Cameroon,5,0
+199,Canada,5,4
+200,Central African Republic,5,0
+201,Chad,5,0
+202,Chile,5,0
+203,China,5,16630
+204,Colombia,5,0
+205,Congo (Brazzaville),5,0
+206,Congo (Kinshasa),5,0
+207,Costa Rica,5,0
+208,Cote d'Ivoire,5,0
+209,Croatia,5,0
+210,Cuba,5,0
+211,Cyprus,5,0
+212,Czechia,5,0
+213,Denmark,5,0
+214,Diamond Princess,5,0
+215,Djibouti,5,0
+216,Dominica,5,0
+217,Dominican Republic,5,0
+218,Ecuador,5,0
+219,Egypt,5,0
+220,El Salvador,5,0
+221,Equatorial Guinea,5,0
+222,Eritrea,5,0
+223,Estonia,5,0
+224,Eswatini,5,0
+225,Ethiopia,5,0
+226,Fiji,5,0
+227,Finland,5,1
+228,France,5,6
+229,Gabon,5,0
+230,Gambia,5,0
+231,Georgia,5,0
+232,Germany,5,10
+233,Ghana,5,0
+234,Greece,5,0
+235,Grenada,5,0
+236,Guatemala,5,0
+237,Guinea,5,0
+238,Guyana,5,0
+239,Haiti,5,0
+240,Holy See,5,0
+241,Honduras,5,0
+242,Hungary,5,0
+243,Iceland,5,0
+244,India,5,2
+245,Indonesia,5,0
+246,Iran,5,0
+247,Iraq,5,0
+248,Ireland,5,0
+249,Israel,5,0
+250,Italy,5,2
+251,Jamaica,5,0
+252,Japan,5,20
+253,Jordan,5,0
+254,Kazakhstan,5,0
+255,Kenya,5,0
+256,"Korea, South",5,15
+257,Kuwait,5,0
+258,Kyrgyzstan,5,0
+259,Laos,5,0
+260,Latvia,5,0
+261,Lebanon,5,0
+262,Liberia,5,0
+263,Libya,5,0
+264,Liechtenstein,5,0
+265,Lithuania,5,0
+266,Luxembourg,5,0
+267,Madagascar,5,0
+268,Malaysia,5,8
+269,Maldives,5,0
+270,Malta,5,0
+271,Mauritania,5,0
+272,Mauritius,5,0
+273,Mexico,5,0
+274,Moldova,5,0
+275,Monaco,5,0
+276,Mongolia,5,0
+277,Montenegro,5,0
+278,Morocco,5,0
+279,Mozambique,5,0
+280,Namibia,5,0
+281,Nepal,5,1
+282,Netherlands,5,0
+283,New Zealand,5,0
+284,Nicaragua,5,0
+285,Niger,5,0
+286,Nigeria,5,0
+287,North Macedonia,5,0
+288,Norway,5,0
+289,Oman,5,0
+290,Pakistan,5,0
+291,Panama,5,0
+292,Papua New Guinea,5,0
+293,Paraguay,5,0
+294,Peru,5,0
+295,Philippines,5,2
+296,Poland,5,0
+297,Portugal,5,0
+298,Qatar,5,0
+299,Romania,5,0
+300,Russia,5,2
+301,Rwanda,5,0
+302,Saint Lucia,5,0
+303,Saint Vincent and the Grenadines,5,0
+304,San Marino,5,0
+305,Saudi Arabia,5,0
+306,Senegal,5,0
+307,Serbia,5,0
+308,Seychelles,5,0
+309,Singapore,5,18
+310,Slovakia,5,0
+311,Slovenia,5,0
+312,Somalia,5,0
+313,South Africa,5,0
+314,Spain,5,1
+315,Sri Lanka,5,1
+316,Sudan,5,0
+317,Suriname,5,0
+318,Sweden,5,1
+319,Switzerland,5,0
+320,Syria,5,0
+321,Taiwan*,5,10
+322,Tanzania,5,0
+323,Thailand,5,19
+324,Timor-Leste,5,0
+325,Togo,5,0
+326,Trinidad and Tobago,5,0
+327,Tunisia,5,0
+328,Turkey,5,0
+329,US,5,8
+330,Uganda,5,0
+331,Ukraine,5,0
+332,United Arab Emirates,5,5
+333,United Kingdom,5,2
+334,Uruguay,5,0
+335,Uzbekistan,5,0
+336,Venezuela,5,0
+337,Vietnam,5,6
+338,Zambia,5,0
+339,Zimbabwe,5,0
+340,Afghanistan,6,0
+341,Albania,6,0
+342,Algeria,6,0
+343,Andorra,6,0
+344,Angola,6,0
+345,Antigua and Barbuda,6,0
+346,Argentina,6,0
+347,Armenia,6,0
+348,Australia,6,15
+349,Austria,6,0
+350,Azerbaijan,6,0
+351,Bahamas,6,0
+352,Bahrain,6,0
+353,Bangladesh,6,0
+354,Barbados,6,0
+355,Belarus,6,0
+356,Belgium,6,1
+357,Belize,6,0
+358,Benin,6,0
+359,Bhutan,6,0
+360,Bolivia,6,0
+361,Bosnia and Herzegovina,6,0
+362,Brazil,6,0
+363,Brunei,6,0
+364,Bulgaria,6,0
+365,Burkina Faso,6,0
+366,Cabo Verde,6,0
+367,Cambodia,6,1
+368,Cameroon,6,0
+369,Canada,6,7
+370,Central African Republic,6,0
+371,Chad,6,0
+372,Chile,6,0
+373,China,6,39829
+374,Colombia,6,0
+375,Congo (Brazzaville),6,0
+376,Congo (Kinshasa),6,0
+377,Costa Rica,6,0
+378,Cote d'Ivoire,6,0
+379,Croatia,6,0
+380,Cuba,6,0
+381,Cyprus,6,0
+382,Czechia,6,0
+383,Denmark,6,0
+384,Diamond Princess,6,64
+385,Djibouti,6,0
+386,Dominica,6,0
+387,Dominican Republic,6,0
+388,Ecuador,6,0
+389,Egypt,6,0
+390,El Salvador,6,0
+391,Equatorial Guinea,6,0
+392,Eritrea,6,0
+393,Estonia,6,0
+394,Eswatini,6,0
+395,Ethiopia,6,0
+396,Fiji,6,0
+397,Finland,6,1
+398,France,6,11
+399,Gabon,6,0
+400,Gambia,6,0
+401,Georgia,6,0
+402,Germany,6,14
+403,Ghana,6,0
+404,Greece,6,0
+405,Grenada,6,0
+406,Guatemala,6,0
+407,Guinea,6,0
+408,Guyana,6,0
+409,Haiti,6,0
+410,Holy See,6,0
+411,Honduras,6,0
+412,Hungary,6,0
+413,Iceland,6,0
+414,India,6,3
+415,Indonesia,6,0
+416,Iran,6,0
+417,Iraq,6,0
+418,Ireland,6,0
+419,Israel,6,0
+420,Italy,6,3
+421,Jamaica,6,0
+422,Japan,6,26
+423,Jordan,6,0
+424,Kazakhstan,6,0
+425,Kenya,6,0
+426,"Korea, South",6,25
+427,Kuwait,6,0
+428,Kyrgyzstan,6,0
+429,Laos,6,0
+430,Latvia,6,0
+431,Lebanon,6,0
+432,Liberia,6,0
+433,Libya,6,0
+434,Liechtenstein,6,0
+435,Lithuania,6,0
+436,Luxembourg,6,0
+437,Madagascar,6,0
+438,Malaysia,6,16
+439,Maldives,6,0
+440,Malta,6,0
+441,Mauritania,6,0
+442,Mauritius,6,0
+443,Mexico,6,0
+444,Moldova,6,0
+445,Monaco,6,0
+446,Mongolia,6,0
+447,Montenegro,6,0
+448,Morocco,6,0
+449,Mozambique,6,0
+450,Namibia,6,0
+451,Nepal,6,1
+452,Netherlands,6,0
+453,New Zealand,6,0
+454,Nicaragua,6,0
+455,Niger,6,0
+456,Nigeria,6,0
+457,North Macedonia,6,0
+458,Norway,6,0
+459,Oman,6,0
+460,Pakistan,6,0
+461,Panama,6,0
+462,Papua New Guinea,6,0
+463,Paraguay,6,0
+464,Peru,6,0
+465,Philippines,6,3
+466,Poland,6,0
+467,Portugal,6,0
+468,Qatar,6,0
+469,Romania,6,0
+470,Russia,6,2
+471,Rwanda,6,0
+472,Saint Lucia,6,0
+473,Saint Vincent and the Grenadines,6,0
+474,San Marino,6,0
+475,Saudi Arabia,6,0
+476,Senegal,6,0
+477,Serbia,6,0
+478,Seychelles,6,0
+479,Singapore,6,40
+480,Slovakia,6,0
+481,Slovenia,6,0
+482,Somalia,6,0
+483,South Africa,6,0
+484,Spain,6,2
+485,Sri Lanka,6,1
+486,Sudan,6,0
+487,Suriname,6,0
+488,Sweden,6,1
+489,Switzerland,6,0
+490,Syria,6,0
+491,Taiwan*,6,18
+492,Tanzania,6,0
+493,Thailand,6,32
+494,Timor-Leste,6,0
+495,Togo,6,0
+496,Trinidad and Tobago,6,0
+497,Tunisia,6,0
+498,Turkey,6,0
+499,US,6,11
+500,Uganda,6,0
+501,Ukraine,6,0
+502,United Arab Emirates,6,7
+503,United Kingdom,6,3
+504,Uruguay,6,0
+505,Uzbekistan,6,0
+506,Venezuela,6,0
+507,Vietnam,6,13
+508,Zambia,6,0
+509,Zimbabwe,6,0
+510,Afghanistan,7,0
+511,Albania,7,0
+512,Algeria,7,0
+513,Andorra,7,0
+514,Angola,7,0
+515,Antigua and Barbuda,7,0
+516,Argentina,7,0
+517,Armenia,7,0
+518,Australia,7,15
+519,Austria,7,0
+520,Azerbaijan,7,0
+521,Bahamas,7,0
+522,Bahrain,7,0
+523,Bangladesh,7,0
+524,Barbados,7,0
+525,Belarus,7,0
+526,Belgium,7,1
+527,Belize,7,0
+528,Benin,7,0
+529,Bhutan,7,0
+530,Bolivia,7,0
+531,Bosnia and Herzegovina,7,0
+532,Brazil,7,0
+533,Brunei,7,0
+534,Bulgaria,7,0
+535,Burkina Faso,7,0
+536,Cabo Verde,7,0
+537,Cambodia,7,1
+538,Cameroon,7,0
+539,Canada,7,7
+540,Central African Republic,7,0
+541,Chad,7,0
+542,Chile,7,0
+543,China,7,70513
+544,Colombia,7,0
+545,Congo (Brazzaville),7,0
+546,Congo (Kinshasa),7,0
+547,Costa Rica,7,0
+548,Cote d'Ivoire,7,0
+549,Croatia,7,0
+550,Cuba,7,0
+551,Cyprus,7,0
+552,Czechia,7,0
+553,Denmark,7,0
+554,Diamond Princess,7,355
+555,Djibouti,7,0
+556,Dominica,7,0
+557,Dominican Republic,7,0
+558,Ecuador,7,0
+559,Egypt,7,1
+560,El Salvador,7,0
+561,Equatorial Guinea,7,0
+562,Eritrea,7,0
+563,Estonia,7,0
+564,Eswatini,7,0
+565,Ethiopia,7,0
+566,Fiji,7,0
+567,Finland,7,1
+568,France,7,12
+569,Gabon,7,0
+570,Gambia,7,0
+571,Georgia,7,0
+572,Germany,7,16
+573,Ghana,7,0
+574,Greece,7,0
+575,Grenada,7,0
+576,Guatemala,7,0
+577,Guinea,7,0
+578,Guyana,7,0
+579,Haiti,7,0
+580,Holy See,7,0
+581,Honduras,7,0
+582,Hungary,7,0
+583,Iceland,7,0
+584,India,7,3
+585,Indonesia,7,0
+586,Iran,7,0
+587,Iraq,7,0
+588,Ireland,7,0
+589,Israel,7,0
+590,Italy,7,3
+591,Jamaica,7,0
+592,Japan,7,59
+593,Jordan,7,0
+594,Kazakhstan,7,0
+595,Kenya,7,0
+596,"Korea, South",7,29
+597,Kuwait,7,0
+598,Kyrgyzstan,7,0
+599,Laos,7,0
+600,Latvia,7,0
+601,Lebanon,7,0
+602,Liberia,7,0
+603,Libya,7,0
+604,Liechtenstein,7,0
+605,Lithuania,7,0
+606,Luxembourg,7,0
+607,Madagascar,7,0
+608,Malaysia,7,22
+609,Maldives,7,0
+610,Malta,7,0
+611,Mauritania,7,0
+612,Mauritius,7,0
+613,Mexico,7,0
+614,Moldova,7,0
+615,Monaco,7,0
+616,Mongolia,7,0
+617,Montenegro,7,0
+618,Morocco,7,0
+619,Mozambique,7,0
+620,Namibia,7,0
+621,Nepal,7,1
+622,Netherlands,7,0
+623,New Zealand,7,0
+624,Nicaragua,7,0
+625,Niger,7,0
+626,Nigeria,7,0
+627,North Macedonia,7,0
+628,Norway,7,0
+629,Oman,7,0
+630,Pakistan,7,0
+631,Panama,7,0
+632,Papua New Guinea,7,0
+633,Paraguay,7,0
+634,Peru,7,0
+635,Philippines,7,3
+636,Poland,7,0
+637,Portugal,7,0
+638,Qatar,7,0
+639,Romania,7,0
+640,Russia,7,2
+641,Rwanda,7,0
+642,Saint Lucia,7,0
+643,Saint Vincent and the Grenadines,7,0
+644,San Marino,7,0
+645,Saudi Arabia,7,0
+646,Senegal,7,0
+647,Serbia,7,0
+648,Seychelles,7,0
+649,Singapore,7,75
+650,Slovakia,7,0
+651,Slovenia,7,0
+652,Somalia,7,0
+653,South Africa,7,0
+654,Spain,7,2
+655,Sri Lanka,7,1
+656,Sudan,7,0
+657,Suriname,7,0
+658,Sweden,7,1
+659,Switzerland,7,0
+660,Syria,7,0
+661,Taiwan*,7,20
+662,Tanzania,7,0
+663,Thailand,7,34
+664,Timor-Leste,7,0
+665,Togo,7,0
+666,Trinidad and Tobago,7,0
+667,Tunisia,7,0
+668,Turkey,7,0
+669,US,7,13
+670,Uganda,7,0
+671,Ukraine,7,0
+672,United Arab Emirates,7,9
+673,United Kingdom,7,9
+674,Uruguay,7,0
+675,Uzbekistan,7,0
+676,Venezuela,7,0
+677,Vietnam,7,16
+678,Zambia,7,0
+679,Zimbabwe,7,0
+680,Afghanistan,8,0
+681,Albania,8,0
+682,Algeria,8,0
+683,Andorra,8,0
+684,Angola,8,0
+685,Antigua and Barbuda,8,0
+686,Argentina,8,0
+687,Armenia,8,0
+688,Australia,8,15
+689,Austria,8,0
+690,Azerbaijan,8,0
+691,Bahamas,8,0
+692,Bahrain,8,0
+693,Bangladesh,8,0
+694,Barbados,8,0
+695,Belarus,8,0
+696,Belgium,8,1
+697,Belize,8,0
+698,Benin,8,0
+699,Bhutan,8,0
+700,Bolivia,8,0
+701,Bosnia and Herzegovina,8,0
+702,Brazil,8,0
+703,Brunei,8,0
+704,Bulgaria,8,0
+705,Burkina Faso,8,0
+706,Cabo Verde,8,0
+707,Cambodia,8,1
+708,Cameroon,8,0
+709,Canada,8,9
+710,Central African Republic,8,0
+711,Chad,8,0
+712,Chile,8,0
+713,China,8,77022
+714,Colombia,8,0
+715,Congo (Brazzaville),8,0
+716,Congo (Kinshasa),8,0
+717,Costa Rica,8,0
+718,Cote d'Ivoire,8,0
+719,Croatia,8,0
+720,Cuba,8,0
+721,Cyprus,8,0
+722,Czechia,8,0
+723,Denmark,8,0
+724,Diamond Princess,8,691
+725,Djibouti,8,0
+726,Dominica,8,0
+727,Dominican Republic,8,0
+728,Ecuador,8,0
+729,Egypt,8,1
+730,El Salvador,8,0
+731,Equatorial Guinea,8,0
+732,Eritrea,8,0
+733,Estonia,8,0
+734,Eswatini,8,0
+735,Ethiopia,8,0
+736,Fiji,8,0
+737,Finland,8,1
+738,France,8,12
+739,Gabon,8,0
+740,Gambia,8,0
+741,Georgia,8,0
+742,Germany,8,16
+743,Ghana,8,0
+744,Greece,8,0
+745,Grenada,8,0
+746,Guatemala,8,0
+747,Guinea,8,0
+748,Guyana,8,0
+749,Haiti,8,0
+750,Holy See,8,0
+751,Honduras,8,0
+752,Hungary,8,0
+753,Iceland,8,0
+754,India,8,3
+755,Indonesia,8,0
+756,Iran,8,43
+757,Iraq,8,0
+758,Ireland,8,0
+759,Israel,8,1
+760,Italy,8,155
+761,Jamaica,8,0
+762,Japan,8,147
+763,Jordan,8,0
+764,Kazakhstan,8,0
+765,Kenya,8,0
+766,"Korea, South",8,602
+767,Kuwait,8,0
+768,Kyrgyzstan,8,0
+769,Laos,8,0
+770,Latvia,8,0
+771,Lebanon,8,1
+772,Liberia,8,0
+773,Libya,8,0
+774,Liechtenstein,8,0
+775,Lithuania,8,0
+776,Luxembourg,8,0
+777,Madagascar,8,0
+778,Malaysia,8,22
+779,Maldives,8,0
+780,Malta,8,0
+781,Mauritania,8,0
+782,Mauritius,8,0
+783,Mexico,8,0
+784,Moldova,8,0
+785,Monaco,8,0
+786,Mongolia,8,0
+787,Montenegro,8,0
+788,Morocco,8,0
+789,Mozambique,8,0
+790,Namibia,8,0
+791,Nepal,8,1
+792,Netherlands,8,0
+793,New Zealand,8,0
+794,Nicaragua,8,0
+795,Niger,8,0
+796,Nigeria,8,0
+797,North Macedonia,8,0
+798,Norway,8,0
+799,Oman,8,0
+800,Pakistan,8,0
+801,Panama,8,0
+802,Papua New Guinea,8,0
+803,Paraguay,8,0
+804,Peru,8,0
+805,Philippines,8,3
+806,Poland,8,0
+807,Portugal,8,0
+808,Qatar,8,0
+809,Romania,8,0
+810,Russia,8,2
+811,Rwanda,8,0
+812,Saint Lucia,8,0
+813,Saint Vincent and the Grenadines,8,0
+814,San Marino,8,0
+815,Saudi Arabia,8,0
+816,Senegal,8,0
+817,Serbia,8,0
+818,Seychelles,8,0
+819,Singapore,8,89
+820,Slovakia,8,0
+821,Slovenia,8,0
+822,Somalia,8,0
+823,South Africa,8,0
+824,Spain,8,2
+825,Sri Lanka,8,1
+826,Sudan,8,0
+827,Suriname,8,0
+828,Sweden,8,1
+829,Switzerland,8,0
+830,Syria,8,0
+831,Taiwan*,8,28
+832,Tanzania,8,0
+833,Thailand,8,35
+834,Timor-Leste,8,0
+835,Togo,8,0
+836,Trinidad and Tobago,8,0
+837,Tunisia,8,0
+838,Turkey,8,0
+839,US,8,15
+840,Uganda,8,0
+841,Ukraine,8,0
+842,United Arab Emirates,8,13
+843,United Kingdom,8,9
+844,Uruguay,8,0
+845,Uzbekistan,8,0
+846,Venezuela,8,0
+847,Vietnam,8,16
+848,Zambia,8,0
+849,Zimbabwe,8,0
+850,Afghanistan,9,1
+851,Albania,9,0
+852,Algeria,9,1
+853,Andorra,9,0
+854,Angola,9,0
+855,Antigua and Barbuda,9,0
+856,Argentina,9,0
+857,Armenia,9,1
+858,Australia,9,27
+859,Austria,9,14
+860,Azerbaijan,9,3
+861,Bahamas,9,0
+862,Bahrain,9,47
+863,Bangladesh,9,0
+864,Barbados,9,0
+865,Belarus,9,1
+866,Belgium,9,2
+867,Belize,9,0
+868,Benin,9,0
+869,Bhutan,9,0
+870,Bolivia,9,0
+871,Bosnia and Herzegovina,9,0
+872,Brazil,9,2
+873,Brunei,9,0
+874,Bulgaria,9,0
+875,Burkina Faso,9,0
+876,Cabo Verde,9,0
+877,Cambodia,9,1
+878,Cameroon,9,0
+879,Canada,9,24
+880,Central African Republic,9,0
+881,Chad,9,0
+882,Chile,9,0
+883,China,9,79932
+884,Colombia,9,0
+885,Congo (Brazzaville),9,0
+886,Congo (Kinshasa),9,0
+887,Costa Rica,9,0
+888,Cote d'Ivoire,9,0
+889,Croatia,9,7
+890,Cuba,9,0
+891,Cyprus,9,0
+892,Czechia,9,3
+893,Denmark,9,4
+894,Diamond Princess,9,705
+895,Djibouti,9,0
+896,Dominica,9,0
+897,Dominican Republic,9,1
+898,Ecuador,9,6
+899,Egypt,9,2
+900,El Salvador,9,0
+901,Equatorial Guinea,9,0
+902,Eritrea,9,0
+903,Estonia,9,1
+904,Eswatini,9,0
+905,Ethiopia,9,0
+906,Fiji,9,0
+907,Finland,9,6
+908,France,9,130
+909,Gabon,9,0
+910,Gambia,9,0
+911,Georgia,9,3
+912,Germany,9,130
+913,Ghana,9,0
+914,Greece,9,7
+915,Grenada,9,0
+916,Guatemala,9,0
+917,Guinea,9,0
+918,Guyana,9,0
+919,Haiti,9,0
+920,Holy See,9,0
+921,Honduras,9,0
+922,Hungary,9,0
+923,Iceland,9,3
+924,India,9,3
+925,Indonesia,9,0
+926,Iran,9,978
+927,Iraq,9,19
+928,Ireland,9,1
+929,Israel,9,10
+930,Italy,9,1694
+931,Jamaica,9,0
+932,Japan,9,256
+933,Jordan,9,0
+934,Kazakhstan,9,0
+935,Kenya,9,0
+936,"Korea, South",9,3736
+937,Kuwait,9,45
+938,Kyrgyzstan,9,0
+939,Laos,9,0
+940,Latvia,9,0
+941,Lebanon,9,10
+942,Liberia,9,0
+943,Libya,9,0
+944,Liechtenstein,9,0
+945,Lithuania,9,1
+946,Luxembourg,9,1
+947,Madagascar,9,0
+948,Malaysia,9,29
+949,Maldives,9,0
+950,Malta,9,0
+951,Mauritania,9,0
+952,Mauritius,9,0
+953,Mexico,9,5
+954,Moldova,9,0
+955,Monaco,9,1
+956,Mongolia,9,0
+957,Montenegro,9,0
+958,Morocco,9,0
+959,Mozambique,9,0
+960,Namibia,9,0
+961,Nepal,9,1
+962,Netherlands,9,10
+963,New Zealand,9,1
+964,Nicaragua,9,0
+965,Niger,9,0
+966,Nigeria,9,1
+967,North Macedonia,9,1
+968,Norway,9,19
+969,Oman,9,6
+970,Pakistan,9,4
+971,Panama,9,0
+972,Papua New Guinea,9,0
+973,Paraguay,9,0
+974,Peru,9,0
+975,Philippines,9,3
+976,Poland,9,0
+977,Portugal,9,0
+978,Qatar,9,3
+979,Romania,9,3
+980,Russia,9,2
+981,Rwanda,9,0
+982,Saint Lucia,9,0
+983,Saint Vincent and the Grenadines,9,0
+984,San Marino,9,1
+985,Saudi Arabia,9,0
+986,Senegal,9,0
+987,Serbia,9,0
+988,Seychelles,9,0
+989,Singapore,9,106
+990,Slovakia,9,0
+991,Slovenia,9,0
+992,Somalia,9,0
+993,South Africa,9,0
+994,Spain,9,84
+995,Sri Lanka,9,1
+996,Sudan,9,0
+997,Suriname,9,0
+998,Sweden,9,14
+999,Switzerland,9,27
+1000,Syria,9,0
+1001,Taiwan*,9,40
+1002,Tanzania,9,0
+1003,Thailand,9,42
+1004,Timor-Leste,9,0
+1005,Togo,9,0
+1006,Trinidad and Tobago,9,0
+1007,Tunisia,9,0
+1008,Turkey,9,0
+1009,US,9,74
+1010,Uganda,9,0
+1011,Ukraine,9,0
+1012,United Arab Emirates,9,21
+1013,United Kingdom,9,36
+1014,Uruguay,9,0
+1015,Uzbekistan,9,0
+1016,Venezuela,9,0
+1017,Vietnam,9,16
+1018,Zambia,9,0
+1019,Zimbabwe,9,0
+1020,Afghanistan,10,4
+1021,Albania,10,0
+1022,Algeria,10,19
+1023,Andorra,10,1
+1024,Angola,10,0
+1025,Antigua and Barbuda,10,0
+1026,Argentina,10,12
+1027,Armenia,10,1
+1028,Australia,10,76
+1029,Austria,10,104
+1030,Azerbaijan,10,9
+1031,Bahamas,10,0
+1032,Bahrain,10,85
+1033,Bangladesh,10,3
+1034,Barbados,10,0
+1035,Belarus,10,6
+1036,Belgium,10,200
+1037,Belize,10,0
+1038,Benin,10,0
+1039,Bhutan,10,1
+1040,Bolivia,10,0
+1041,Bosnia and Herzegovina,10,3
+1042,Brazil,10,20
+1043,Brunei,10,0
+1044,Bulgaria,10,4
+1045,Burkina Faso,10,0
+1046,Cabo Verde,10,0
+1047,Cambodia,10,2
+1048,Cameroon,10,2
+1049,Canada,10,64
+1050,Central African Republic,10,0
+1051,Chad,10,0
+1052,Chile,10,8
+1053,China,10,80823
+1054,Colombia,10,1
+1055,Congo (Brazzaville),10,0
+1056,Congo (Kinshasa),10,0
+1057,Costa Rica,10,5
+1058,Cote d'Ivoire,10,0
+1059,Croatia,10,12
+1060,Cuba,10,0
+1061,Cyprus,10,0
+1062,Czechia,10,31
+1063,Denmark,10,37
+1064,Diamond Princess,10,706
+1065,Djibouti,10,0
+1066,Dominica,10,0
+1067,Dominican Republic,10,5
+1068,Ecuador,10,14
+1069,Egypt,10,49
+1070,El Salvador,10,0
+1071,Equatorial Guinea,10,0
+1072,Eritrea,10,0
+1073,Estonia,10,10
+1074,Eswatini,10,0
+1075,Ethiopia,10,0
+1076,Fiji,10,0
+1077,Finland,10,23
+1078,France,10,1136
+1079,Gabon,10,0
+1080,Gambia,10,0
+1081,Georgia,10,13
+1082,Germany,10,1040
+1083,Ghana,10,0
+1084,Greece,10,73
+1085,Grenada,10,0
+1086,Guatemala,10,0
+1087,Guinea,10,0
+1088,Guyana,10,0
+1089,Haiti,10,0
+1090,Holy See,10,1
+1091,Honduras,10,0
+1092,Hungary,10,7
+1093,Iceland,10,50
+1094,India,10,39
+1095,Indonesia,10,6
+1096,Iran,10,6566
+1097,Iraq,10,60
+1098,Ireland,10,19
+1099,Israel,10,61
+1100,Italy,10,7375
+1101,Jamaica,10,0
+1102,Japan,10,502
+1103,Jordan,10,1
+1104,Kazakhstan,10,0
+1105,Kenya,10,0
+1106,"Korea, South",10,7314
+1107,Kuwait,10,64
+1108,Kyrgyzstan,10,0
+1109,Laos,10,0
+1110,Latvia,10,2
+1111,Lebanon,10,32
+1112,Liberia,10,0
+1113,Libya,10,0
+1114,Liechtenstein,10,1
+1115,Lithuania,10,1
+1116,Luxembourg,10,3
+1117,Madagascar,10,0
+1118,Malaysia,10,99
+1119,Maldives,10,4
+1120,Malta,10,3
+1121,Mauritania,10,0
+1122,Mauritius,10,0
+1123,Mexico,10,7
+1124,Moldova,10,1
+1125,Monaco,10,1
+1126,Mongolia,10,0
+1127,Montenegro,10,0
+1128,Morocco,10,2
+1129,Mozambique,10,0
+1130,Namibia,10,0
+1131,Nepal,10,1
+1132,Netherlands,10,265
+1133,New Zealand,10,5
+1134,Nicaragua,10,0
+1135,Niger,10,0
+1136,Nigeria,10,1
+1137,North Macedonia,10,3
+1138,Norway,10,176
+1139,Oman,10,16
+1140,Pakistan,10,6
+1141,Panama,10,0
+1142,Papua New Guinea,10,0
+1143,Paraguay,10,1
+1144,Peru,10,6
+1145,Philippines,10,10
+1146,Poland,10,11
+1147,Portugal,10,30
+1148,Qatar,10,15
+1149,Romania,10,15
+1150,Russia,10,17
+1151,Rwanda,10,0
+1152,Saint Lucia,10,0
+1153,Saint Vincent and the Grenadines,10,0
+1154,San Marino,10,36
+1155,Saudi Arabia,10,11
+1156,Senegal,10,4
+1157,Serbia,10,1
+1158,Seychelles,10,0
+1159,Singapore,10,150
+1160,Slovakia,10,3
+1161,Slovenia,10,16
+1162,Somalia,10,0
+1163,South Africa,10,3
+1164,Spain,10,673
+1165,Sri Lanka,10,1
+1166,Sudan,10,0
+1167,Suriname,10,0
+1168,Sweden,10,203
+1169,Switzerland,10,337
+1170,Syria,10,0
+1171,Taiwan*,10,45
+1172,Tanzania,10,0
+1173,Thailand,10,50
+1174,Timor-Leste,10,0
+1175,Togo,10,1
+1176,Trinidad and Tobago,10,0
+1177,Tunisia,10,2
+1178,Turkey,10,0
+1179,US,10,518
+1180,Uganda,10,0
+1181,Ukraine,10,1
+1182,United Arab Emirates,10,45
+1183,United Kingdom,10,274
+1184,Uruguay,10,0
+1185,Uzbekistan,10,0
+1186,Venezuela,10,0
+1187,Vietnam,10,30
+1188,Zambia,10,0
+1189,Zimbabwe,10,0
+1190,Afghanistan,11,16
+1191,Albania,11,42
+1192,Algeria,11,48
+1193,Andorra,11,1
+1194,Angola,11,0
+1195,Antigua and Barbuda,11,1
+1196,Argentina,11,45
+1197,Armenia,11,26
+1198,Australia,11,297
+1199,Austria,11,860
+1200,Azerbaijan,11,23
+1201,Bahamas,11,0
+1202,Bahrain,11,214
+1203,Bangladesh,11,5
+1204,Barbados,11,0
+1205,Belarus,11,27
+1206,Belgium,11,886
+1207,Belize,11,0
+1208,Benin,11,0
+1209,Bhutan,11,1
+1210,Bolivia,11,10
+1211,Bosnia and Herzegovina,11,24
+1212,Brazil,11,162
+1213,Brunei,11,50
+1214,Bulgaria,11,51
+1215,Burkina Faso,11,3
+1216,Cabo Verde,11,0
+1217,Cambodia,11,7
+1218,Cameroon,11,2
+1219,Canada,11,252
+1220,Central African Republic,11,1
+1221,Chad,11,0
+1222,Chile,11,74
+1223,China,11,81003
+1224,Colombia,11,34
+1225,Congo (Brazzaville),11,1
+1226,Congo (Kinshasa),11,2
+1227,Costa Rica,11,27
+1228,Cote d'Ivoire,11,1
+1229,Croatia,11,49
+1230,Cuba,11,4
+1231,Cyprus,11,26
+1232,Czechia,11,253
+1233,Denmark,11,875
+1234,Diamond Princess,11,706
+1235,Djibouti,11,0
+1236,Dominica,11,0
+1237,Dominican Republic,11,11
+1238,Ecuador,11,28
+1239,Egypt,11,110
+1240,El Salvador,11,0
+1241,Equatorial Guinea,11,1
+1242,Eritrea,11,0
+1243,Estonia,11,171
+1244,Eswatini,11,1
+1245,Ethiopia,11,1
+1246,Fiji,11,0
+1247,Finland,11,244
+1248,France,11,4532
+1249,Gabon,11,1
+1250,Gambia,11,0
+1251,Georgia,11,33
+1252,Germany,11,5795
+1253,Ghana,11,6
+1254,Greece,11,331
+1255,Grenada,11,0
+1256,Guatemala,11,1
+1257,Guinea,11,1
+1258,Guyana,11,4
+1259,Haiti,11,0
+1260,Holy See,11,1
+1261,Honduras,11,3
+1262,Hungary,11,32
+1263,Iceland,11,171
+1264,India,11,113
+1265,Indonesia,11,117
+1266,Iran,11,13938
+1267,Iraq,11,116
+1268,Ireland,11,129
+1269,Israel,11,251
+1270,Italy,11,24747
+1271,Jamaica,11,10
+1272,Japan,11,839
+1273,Jordan,11,8
+1274,Kazakhstan,11,9
+1275,Kenya,11,3
+1276,"Korea, South",11,8162
+1277,Kuwait,11,112
+1278,Kyrgyzstan,11,0
+1279,Laos,11,0
+1280,Latvia,11,30
+1281,Lebanon,11,110
+1282,Liberia,11,0
+1283,Libya,11,0
+1284,Liechtenstein,11,4
+1285,Lithuania,11,12
+1286,Luxembourg,11,59
+1287,Madagascar,11,0
+1288,Malaysia,11,428
+1289,Maldives,11,13
+1290,Malta,11,21
+1291,Mauritania,11,1
+1292,Mauritius,11,0
+1293,Mexico,11,41
+1294,Moldova,11,23
+1295,Monaco,11,2
+1296,Mongolia,11,1
+1297,Montenegro,11,0
+1298,Morocco,11,28
+1299,Mozambique,11,0
+1300,Namibia,11,2
+1301,Nepal,11,1
+1302,Netherlands,11,1138
+1303,New Zealand,11,8
+1304,Nicaragua,11,0
+1305,Niger,11,0
+1306,Nigeria,11,2
+1307,North Macedonia,11,14
+1308,Norway,11,1221
+1309,Oman,11,22
+1310,Pakistan,11,53
+1311,Panama,11,43
+1312,Papua New Guinea,11,0
+1313,Paraguay,11,6
+1314,Peru,11,43
+1315,Philippines,11,140
+1316,Poland,11,119
+1317,Portugal,11,245
+1318,Qatar,11,401
+1319,Romania,11,131
+1320,Russia,11,63
+1321,Rwanda,11,1
+1322,Saint Lucia,11,2
+1323,Saint Vincent and the Grenadines,11,1
+1324,San Marino,11,101
+1325,Saudi Arabia,11,103
+1326,Senegal,11,24
+1327,Serbia,11,48
+1328,Seychelles,11,2
+1329,Singapore,11,226
+1330,Slovakia,11,54
+1331,Slovenia,11,219
+1332,Somalia,11,0
+1333,South Africa,11,51
+1334,Spain,11,7798
+1335,Sri Lanka,11,18
+1336,Sudan,11,1
+1337,Suriname,11,1
+1338,Sweden,11,1022
+1339,Switzerland,11,2200
+1340,Syria,11,0
+1341,Taiwan*,11,59
+1342,Tanzania,11,0
+1343,Thailand,11,114
+1344,Timor-Leste,11,0
+1345,Togo,11,1
+1346,Trinidad and Tobago,11,2
+1347,Tunisia,11,18
+1348,Turkey,11,6
+1349,US,11,3499
+1350,Uganda,11,0
+1351,Ukraine,11,3
+1352,United Arab Emirates,11,98
+1353,United Kingdom,11,1145
+1354,Uruguay,11,4
+1355,Uzbekistan,11,1
+1356,Venezuela,11,10
+1357,Vietnam,11,56
+1358,Zambia,11,0
+1359,Zimbabwe,11,0
+1360,Afghanistan,12,40
+1361,Albania,12,89
+1362,Algeria,12,201
+1363,Andorra,12,113
+1364,Angola,12,2
+1365,Antigua and Barbuda,12,1
+1366,Argentina,12,266
+1367,Armenia,12,194
+1368,Australia,12,1549
+1369,Austria,12,3582
+1370,Azerbaijan,12,65
+1371,Bahamas,12,4
+1372,Bahrain,12,334
+1373,Bangladesh,12,27
+1374,Barbados,12,14
+1375,Belarus,12,76
+1376,Belgium,12,3401
+1377,Belize,12,0
+1378,Benin,12,2
+1379,Bhutan,12,2
+1380,Bolivia,12,24
+1381,Bosnia and Herzegovina,12,126
+1382,Brazil,12,1546
+1383,Brunei,12,88
+1384,Bulgaria,12,187
+1385,Burkina Faso,12,75
+1386,Cabo Verde,12,3
+1387,Cambodia,12,84
+1388,Cameroon,12,40
+1389,Canada,12,1469
+1390,Central African Republic,12,3
+1391,Chad,12,1
+1392,Chile,12,632
+1393,China,12,81435
+1394,Colombia,12,231
+1395,Congo (Brazzaville),12,3
+1396,Congo (Kinshasa),12,30
+1397,Costa Rica,12,134
+1398,Cote d'Ivoire,12,14
+1399,Croatia,12,254
+1400,Cuba,12,35
+1401,Cyprus,12,95
+1402,Czechia,12,1120
+1403,Denmark,12,1514
+1404,Diamond Princess,12,712
+1405,Djibouti,12,1
+1406,Dominica,12,1
+1407,Dominican Republic,12,202
+1408,Ecuador,12,789
+1409,Egypt,12,327
+1410,El Salvador,12,3
+1411,Equatorial Guinea,12,6
+1412,Eritrea,12,1
+1413,Estonia,12,326
+1414,Eswatini,12,4
+1415,Ethiopia,12,11
+1416,Fiji,12,2
+1417,Finland,12,626
+1418,France,12,16243
+1419,Gabon,12,5
+1420,Gambia,12,1
+1421,Georgia,12,54
+1422,Germany,12,24873
+1423,Ghana,12,23
+1424,Greece,12,624
+1425,Grenada,12,1
+1426,Guatemala,12,19
+1427,Guinea,12,2
+1428,Guyana,12,19
+1429,Haiti,12,2
+1430,Holy See,12,1
+1431,Honduras,12,26
+1432,Hungary,12,131
+1433,Iceland,12,568
+1434,India,12,396
+1435,Indonesia,12,514
+1436,Iran,12,21638
+1437,Iraq,12,233
+1438,Ireland,12,906
+1439,Israel,12,1071
+1440,Italy,12,59138
+1441,Jamaica,12,19
+1442,Japan,12,1101
+1443,Jordan,12,112
+1444,Kazakhstan,12,60
+1445,Kenya,12,15
+1446,"Korea, South",12,8961
+1447,Kuwait,12,188
+1448,Kyrgyzstan,12,14
+1449,Laos,12,0
+1450,Latvia,12,139
+1451,Lebanon,12,248
+1452,Liberia,12,3
+1453,Libya,12,0
+1454,Liechtenstein,12,37
+1455,Lithuania,12,143
+1456,Luxembourg,12,798
+1457,Madagascar,12,3
+1458,Malaysia,12,1306
+1459,Maldives,12,13
+1460,Malta,12,90
+1461,Mauritania,12,2
+1462,Mauritius,12,28
+1463,Mexico,12,251
+1464,Moldova,12,94
+1465,Monaco,12,23
+1466,Mongolia,12,10
+1467,Montenegro,12,21
+1468,Morocco,12,115
+1469,Mozambique,12,1
+1470,Namibia,12,3
+1471,Nepal,12,1
+1472,Netherlands,12,4217
+1473,New Zealand,12,102
+1474,Nicaragua,12,2
+1475,Niger,12,2
+1476,Nigeria,12,30
+1477,North Macedonia,12,115
+1478,Norway,12,2385
+1479,Oman,12,55
+1480,Pakistan,12,776
+1481,Panama,12,313
+1482,Papua New Guinea,12,1
+1483,Paraguay,12,22
+1484,Peru,12,363
+1485,Philippines,12,380
+1486,Poland,12,634
+1487,Portugal,12,1600
+1488,Qatar,12,494
+1489,Romania,12,433
+1490,Russia,12,367
+1491,Rwanda,12,19
+1492,Saint Lucia,12,2
+1493,Saint Vincent and the Grenadines,12,1
+1494,San Marino,12,175
+1495,Saudi Arabia,12,511
+1496,Senegal,12,67
+1497,Serbia,12,222
+1498,Seychelles,12,7
+1499,Singapore,12,455
+1500,Slovakia,12,185
+1501,Slovenia,12,414
+1502,Somalia,12,1
+1503,South Africa,12,274
+1504,Spain,12,28768
+1505,Sri Lanka,12,82
+1506,Sudan,12,2
+1507,Suriname,12,5
+1508,Sweden,12,1934
+1509,Switzerland,12,7474
+1510,Syria,12,1
+1511,Taiwan*,12,169
+1512,Tanzania,12,12
+1513,Thailand,12,599
+1514,Timor-Leste,12,1
+1515,Togo,12,16
+1516,Trinidad and Tobago,12,50
+1517,Tunisia,12,75
+1518,Turkey,12,1236
+1519,US,12,33276
+1520,Uganda,12,1
+1521,Ukraine,12,73
+1522,United Arab Emirates,12,153
+1523,United Kingdom,12,5745
+1524,Uruguay,12,158
+1525,Uzbekistan,12,43
+1526,Venezuela,12,70
+1527,Vietnam,12,113
+1528,Zambia,12,3
+1529,Zimbabwe,12,3
+1530,Afghanistan,13,74
+1531,Albania,13,123
+1532,Algeria,13,264
+1533,Andorra,13,164
+1534,Angola,13,3
+1535,Antigua and Barbuda,13,3
+1536,Argentina,13,387
+1537,Armenia,13,249
+1538,Australia,13,2044
+1539,Austria,13,5283
+1540,Azerbaijan,13,87
+1541,Bahamas,13,5
+1542,Bahrain,13,392
+1543,Bangladesh,13,39
+1544,Barbados,13,18
+1545,Belarus,13,81
+1546,Belgium,13,4269
+1547,Belize,13,1
+1548,Benin,13,6
+1549,Bhutan,13,2
+1550,Bolivia,13,29
+1551,Bosnia and Herzegovina,13,166
+1552,Brazil,13,2247
+1553,Brunei,13,104
+1554,Bulgaria,13,218
+1555,Burkina Faso,13,114
+1556,Cabo Verde,13,3
+1557,Cambodia,13,91
+1558,Cameroon,13,66
+1559,Canada,13,2790
+1560,Central African Republic,13,3
+1561,Chad,13,3
+1562,Chile,13,922
+1563,China,13,81591
+1564,Colombia,13,378
+1565,Congo (Brazzaville),13,4
+1566,Congo (Kinshasa),13,45
+1567,Costa Rica,13,177
+1568,Cote d'Ivoire,13,73
+1569,Croatia,13,382
+1570,Cuba,13,48
+1571,Cyprus,13,124
+1572,Czechia,13,1394
+1573,Denmark,13,1718
+1574,Diamond Princess,13,712
+1575,Djibouti,13,3
+1576,Dominica,13,2
+1577,Dominican Republic,13,312
+1578,Ecuador,13,1082
+1579,Egypt,13,402
+1580,El Salvador,13,5
+1581,Equatorial Guinea,13,9
+1582,Eritrea,13,1
+1583,Estonia,13,369
+1584,Eswatini,13,4
+1585,Ethiopia,13,12
+1586,Fiji,13,4
+1587,Finland,13,792
+1588,France,13,22622
+1589,Gabon,13,6
+1590,Gambia,13,3
+1591,Georgia,13,70
+1592,Germany,13,32986
+1593,Ghana,13,53
+1594,Greece,13,743
+1595,Grenada,13,1
+1596,Guatemala,13,21
+1597,Guinea,13,4
+1598,Guyana,13,5
+1599,Haiti,13,7
+1600,Holy See,13,4
+1601,Honduras,13,30
+1602,Hungary,13,187
+1603,Iceland,13,648
+1604,India,13,536
+1605,Indonesia,13,686
+1606,Iran,13,24811
+1607,Iraq,13,316
+1608,Ireland,13,1329
+1609,Israel,13,1930
+1610,Italy,13,69176
+1611,Jamaica,13,21
+1612,Japan,13,1193
+1613,Jordan,13,154
+1614,Kazakhstan,13,72
+1615,Kenya,13,25
+1616,"Korea, South",13,9037
+1617,Kuwait,13,191
+1618,Kyrgyzstan,13,42
+1619,Laos,13,2
+1620,Latvia,13,197
+1621,Lebanon,13,318
+1622,Liberia,13,3
+1623,Libya,13,1
+1624,Liechtenstein,13,51
+1625,Lithuania,13,209
+1626,Luxembourg,13,1099
+1627,Madagascar,13,17
+1628,Malaysia,13,1624
+1629,Maldives,13,13
+1630,Malta,13,110
+1631,Mauritania,13,2
+1632,Mauritius,13,42
+1633,Mexico,13,367
+1634,Moldova,13,125
+1635,Monaco,13,23
+1636,Mongolia,13,10
+1637,Montenegro,13,47
+1638,Morocco,13,170
+1639,Mozambique,13,3
+1640,Namibia,13,7
+1641,Nepal,13,2
+1642,Netherlands,13,5580
+1643,New Zealand,13,155
+1644,Nicaragua,13,2
+1645,Niger,13,3
+1646,Nigeria,13,44
+1647,North Macedonia,13,148
+1648,Norway,13,2863
+1649,Oman,13,84
+1650,Pakistan,13,972
+1651,Panama,13,345
+1652,Papua New Guinea,13,1
+1653,Paraguay,13,27
+1654,Peru,13,416
+1655,Philippines,13,552
+1656,Poland,13,901
+1657,Portugal,13,2362
+1658,Qatar,13,526
+1659,Romania,13,794
+1660,Russia,13,495
+1661,Rwanda,13,40
+1662,Saint Lucia,13,3
+1663,Saint Vincent and the Grenadines,13,1
+1664,San Marino,13,187
+1665,Saudi Arabia,13,767
+1666,Senegal,13,86
+1667,Serbia,13,303
+1668,Seychelles,13,7
+1669,Singapore,13,558
+1670,Slovakia,13,204
+1671,Slovenia,13,480
+1672,Somalia,13,1
+1673,South Africa,13,554
+1674,Spain,13,39885
+1675,Sri Lanka,13,102
+1676,Sudan,13,3
+1677,Suriname,13,7
+1678,Sweden,13,2286
+1679,Switzerland,13,9877
+1680,Syria,13,1
+1681,Taiwan*,13,215
+1682,Tanzania,13,12
+1683,Thailand,13,827
+1684,Timor-Leste,13,1
+1685,Togo,13,20
+1686,Trinidad and Tobago,13,57
+1687,Tunisia,13,114
+1688,Turkey,13,1872
+1689,US,13,53740
+1690,Uganda,13,9
+1691,Ukraine,13,97
+1692,United Arab Emirates,13,248
+1693,United Kingdom,13,8164
+1694,Uruguay,13,162
+1695,Uzbekistan,13,50
+1696,Venezuela,13,84
+1697,Vietnam,13,134
+1698,Zambia,13,3
+1699,Zimbabwe,13,3

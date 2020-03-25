@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>Sides of Corona</title>
 
   <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.css" type="text/css" />
@@ -28,22 +28,22 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">COVID-19 Impacts on the World</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('cases_confirmed') }}">The Dark Side
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="{{ url_for('climate_pm25') }}">The Climate Side</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
@@ -52,20 +52,31 @@
       </div>
     </div>
   </nav>
-
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">COVID-19 Data Maps</h1>
-        <p>Corona virus data and impacts around the world.</p>
-      </div>
+  <div class="row">
+    <h2 style="margin-top:10px;margin-left:200px;">Confirmed Count:</h2>
+    <div class="col-sm-4" style="margin-top:10px;">
+      {% if toggle == True %}
+        <a role="button" href="{{ url_for('cases_confirmed') }}" class="btn btn-dark" style="width:120px;">Cases</a>
+        <a role="button" href="{{ url_for('cases_deaths') }}" class="btn btn-outline-dark" style="width:120px;">Deaths</a>
+      {% else %}
+        <a role="button" href="{{ url_for('cases_confirmed') }}" class="btn btn-outline-dark" style="width:120px;">Cases</a>
+        <a role="button" href="{{ url_for('cases_deaths') }}" class="btn btn-dark" style="width:120px;">Deaths</a>
+      {% endif %}
     </div>
   </div>
 
+  <!-- Page Content -->
+  <div style="margin-left:180px;">
+  {{ div | safe }}
+  {{ script | safe }}
+  </div>
   <!-- Bootstrap core JavaScript -->
+
   <script src="{{ url_for('static', filename='jquery/jquery.slim.min.js') }}"></script>
   <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script>
+    var intervalID;
+  </script>
 
 </body>
 

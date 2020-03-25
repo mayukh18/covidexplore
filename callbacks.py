@@ -74,3 +74,44 @@ def get_callback(identifier, args=None):
                         elm.style.cursor = 'grab'
                 }
             """)
+
+    elif identifier == 'dark_slider':
+        return CustomJS(args=dict(source=args[0], sc=args[1]), code="""
+                var f = slider.value;
+                console.log("map",Object.keys(map.document._all_models)[0]);
+                var idx = Object.keys(map.document._all_models)[0];
+                console.log("hello", f, map.document._all_models[idx].data['week'].length, source);
+                for (var i = 0; i < map.document._all_models[idx].data['week'].length; i++){
+                    if (map.document._all_models[idx].data['week'][i] != -1){
+                        for (var j = 0; j<source.data['week'].length; j++){
+                            if (source.data['week'][j] == f && source.data['country'][j] == map.document._all_models[idx].data['country'][i]){
+                                map.document._all_models[idx].data['count'][i] = source.data['count'][j];
+                                break;
+                            }
+                        }
+                    }
+                    map.document._all_models[idx].data['week'][i] = f;
+                }
+                console.log("hello2", sc);
+                map.document._all_models[idx].change.emit();
+                sc.change.emit();
+            """)
+
+    elif identifier == 'dark_play_button':
+        return CustomJS(code="""
+                if (button.label == '► Play'){
+                    button.label = '❚❚ Pause';
+                    intervalID = setInterval(function(){
+                    var week = slider.value;
+                    console.log('play_button', week);
+                    if (week > 13){
+                        week = 4;
+                    }
+                    slider.value = week + 1;
+                    }, 500);
+                }
+                else{
+                    clearInterval(intervalID);
+                    button.label = '► Play';
+                }
+            """)
