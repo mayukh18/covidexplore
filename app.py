@@ -2,8 +2,13 @@ from flask import Flask, render_template, request
 import pandas as pd
 import json
 import numpy as np
+import argparse
 from plots.climate import get_PM25_plot, get_NO2_plot
 from plots.dark import get_cases_plot, get_deaths_plot
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--host")
+parser.add_argument("--port")
 
 app = Flask(__name__)
 
@@ -36,7 +41,6 @@ def climate_pm25():
     return render_template("climate.html", script=script, div=div, toggle=True)
 
 
-# With debug=True, Flask server will auto-reload
-# when there are code changes
 if __name__ == '__main__':
-    app.run()
+    args = parser.parse_args()
+    app.run(host=args.host, port=args.port)
