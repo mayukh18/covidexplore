@@ -47,7 +47,7 @@ for x in data['PM2.5']:
         tmp.append(x)
     else:
         tmp.append(int(x))
-data['PM2.5'] = tmp
+data['PM25'] = tmp
 
 for c in replacements:
     data['country'].replace(c, replacements[c], inplace=True)
@@ -57,7 +57,7 @@ def get_NO2_plot():
     merged_df = gdf.merge(data, on='country', how='left')
     merged_df['week'].fillna(-1, inplace=True)
     merged_df['NO2'].fillna("No Data", inplace=True)
-    merged_df['PM2.5'].fillna("No Data", inplace=True)
+    merged_df['PM25'].fillna("No Data", inplace=True)
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -68,14 +68,14 @@ def get_NO2_plot():
         return json_data
 
     # Input GeoJSON source that contains features for plotting.
-    geosource = GeoJSONDataSource(geojson=json_data(0))
+    geosource = GeoJSONDataSource(geojson=json_data(1))
 
     # Define a sequential multi-hue color palette.
-    palette = mpl['Magma'][256]
+    palette = brewer['Reds'][256]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['NO2']), nan_color='#d9d9d9')
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['NO2'])*0.5, nan_color='#d9d9d9')
 
     # Add hover tool
     hover = HoverTool(tooltips=[('Country/region', '@country'), ('NO2', '@NO2')], callback=get_callback('hover_cursor'))
@@ -110,14 +110,14 @@ def get_NO2_plot():
     p.add_layout(color_bar, 'right')
 
     Overall = ColumnDataSource(data)
-    Curr = ColumnDataSource(data[data['week'] == 0])
+    Curr = ColumnDataSource(data[data['week'] == 1])
 
     callback = get_callback('NO2_slider', [Overall, Curr])
 
     animate = get_callback('climate_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=0, end=11, step=1, value=0, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=1, end=max(merged_df['week']), step=1, value=1, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p
@@ -138,7 +138,7 @@ def get_PM25_plot():
     merged_df = gdf.merge(data, on='country', how='left')
     merged_df['week'].fillna(-1, inplace=True)
     merged_df['NO2'].fillna("No Data", inplace=True)
-    merged_df['PM2.5'].fillna("No Data", inplace=True)
+    merged_df['PM25'].fillna("No Data", inplace=True)
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -149,17 +149,18 @@ def get_PM25_plot():
         return json_data
 
     # Input GeoJSON source that contains features for plotting.
-    geosource = GeoJSONDataSource(geojson=json_data(0))
+    geosource = GeoJSONDataSource(geojson=json_data(1))
 
     # Define a sequential multi-hue color palette.
-    palette = mpl['Magma'][256]
+    #palette = mpl['Magma'][256]
+    palette = brewer['Reds'][256]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['PM2.5']), nan_color='#d9d9d9')
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data['PM25'])*0.8, nan_color='#d9d9d9')
 
     # Add hover tool
-    hover = HoverTool(tooltips=[('Country/region', '@country'), ('PM2.5', '@PM2.5')], callback=get_callback('hover_cursor'))
+    hover = HoverTool(tooltips=[('Country/region', '@country'), ('PM25', '@PM25')], callback=get_callback('hover_cursor'))
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8, width=20, height=500,
@@ -174,20 +175,20 @@ def get_PM25_plot():
     p.axis.visible = False
 
     # Add patch renderer to figure.
-    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'PM2.5', 'transform': color_mapper},
+    p.patches('xs', 'ys', source=geosource, fill_color={'field': 'PM25', 'transform': color_mapper},
               line_color='black', line_width=0.25, fill_alpha=1)
 
     p.add_layout(color_bar, 'right')
 
     Overall = ColumnDataSource(data)
-    Curr = ColumnDataSource(data[data['week'] == 0])
+    Curr = ColumnDataSource(data[data['week'] == 1])
 
     callback = get_callback('PM25_slider', [Overall, Curr])
 
     animate = get_callback('climate_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=0, end=11, step=1, value=0, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=1, end=max(merged_df['week']), step=1, value=1, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p

@@ -11,7 +11,7 @@ from bokeh.embed import json_item
 from bokeh.layouts import widgetbox, row, column
 from bokeh.io import output_notebook, show, output_file
 from bokeh.plotting import figure
-from bokeh.models import GeoJSONDataSource, LinearColorMapper, ColorBar
+from bokeh.models import GeoJSONDataSource, LinearColorMapper, LogColorMapper, ColorBar
 from bokeh.palettes import brewer, mpl
 import geopandas as gpd
 
@@ -34,7 +34,17 @@ gdf = gdf.drop(gdf.index[159]) # Antarctica
 gdf.head()
 
 data1 = pd.read_csv(datafile1)
+c = np.log10(data1['count'])
+c[c == -np.inf] = 0
+data1['count_true'] = data1['count']
+data1['count'] = c
+
 data2 = pd.read_csv(datafile2)
+c = np.log10(data2['count'])
+c[c == -np.inf] = 0
+data2['count_true'] = data2['count']
+data2['count'] = c
+
 
 for c in replacements:
     data1['country'].replace(c, replacements[c], inplace=True)
@@ -48,7 +58,7 @@ def get_cases_plot():
     def json_data(selectedWeek):
         week = selectedWeek
         merged = merged_df[(merged_df['week'] == week) | (merged_df['week'] == -1)]
-        print(merged)
+        #print(merged)
         merged_json = json.loads(merged.to_json())
         json_data = json.dumps(merged_json)
         return json_data
@@ -57,19 +67,21 @@ def get_cases_plot():
     geosource = GeoJSONDataSource(geojson=json_data(4))
 
     # Define a sequential multi-hue color palette.
-    palette = mpl['Magma'][256]
+    #palette = mpl['Magma'][256]
+    palette = brewer['OrRd'][5]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data1['count'])*0.5, nan_color='#d9d9d9')
-
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=5, nan_color='#d9d9d9')
+    ticks = {'0':'0', '1':'10', '2':'100', '3':'1000', '4':'10000', '5':'100000'}
 
     # Add hover tool
-    hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@count')], callback=get_callback('hover_cursor'))
+    hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@count_true')], callback=get_callback('hover_cursor'))
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8, width=20, height=500,
-                         border_line_color=None, location=(0, 0), orientation='vertical')
+                         border_line_color=None, location=(0, 0), orientation='vertical',
+                         major_label_overrides=ticks)
 
     # Create figure object.
     p = figure(title='Confirmed COVID-19 cases since the 4th week of 2020', plot_height=550, plot_width=1100,
@@ -93,7 +105,7 @@ def get_cases_plot():
     animate = get_callback('dark_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=4, end=13, step=1, value=4, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=4, end=max(data1['week']), step=1, value=4, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p
@@ -126,19 +138,21 @@ def get_deaths_plot():
     geosource = GeoJSONDataSource(geojson=json_data(4))
 
     # Define a sequential multi-hue color palette.
-    palette = mpl['Magma'][256]
+    palette = brewer['OrRd'][5]
     palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=np.max(data2['count'])*0.5, nan_color='#d9d9d9')
+    color_mapper = LinearColorMapper(palette=palette, low=0, high=5, nan_color='#d9d9d9')
+    ticks = {'0':'0', '1':'10', '2':'100', '3':'1000', '4':'10000', '5':'100000'}
 
 
     # Add hover tool
-    hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@count')], callback=get_callback('hover_cursor'))
+    hover = HoverTool(tooltips=[('Country', '@country'), ('deaths', '@count_true')], callback=get_callback('hover_cursor'))
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=8, width=20, height=500,
-                         border_line_color=None, location=(0, 0), orientation='vertical')
+                         border_line_color=None, location=(0, 0), orientation='vertical',
+                         major_label_overrides=ticks)
 
     # Create figure object.
     p = figure(title='Deaths due to COVID-19 since the 4th week of 2020', plot_height=550, plot_width=1100,
@@ -162,7 +176,7 @@ def get_deaths_plot():
     animate = get_callback('dark_play_button')
 
     # Make a slider object: slider
-    slider = Slider(title='Week', start=4, end=13, step=1, value=4, orientation="horizontal", width=505)
+    slider = Slider(title='Week', start=4, end=max(data1['week']), step=1, value=4, orientation="horizontal", width=505)
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p
