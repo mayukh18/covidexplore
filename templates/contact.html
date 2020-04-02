@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.css" type="text/css" />
 <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.0.0.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.0.0.min.js"></script>
@@ -25,6 +26,7 @@
 
 <body style="background-color:black;">
 
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
     <div class="container">
@@ -35,53 +37,41 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('cases_confirmed') }}">The Dark Side</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url_for('climate_pm25') }}">The Climate Side
+            <a class="nav-link" href="{{ url_for('home') }}">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('cases_confirmed') }}">The Dark Side</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('climate_pm25') }}">The Climate Side</a>
+          </li>
+          <li class="nav-item active">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="row">
-    <h2 class="text-white" style="margin-top:10px;margin-left:75px;">Air Quality Index:</h2>
-    <div class="col-sm-4" style="margin-top:10px;">
-      {% if toggle == True %}
-        <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-light" style="width:80px;">PM2.5</a>
-        <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-outline-light" style="width:80px;">NO2</a>
-      {% else %}
-        <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-outline-light" style="width:80px;">PM2.5</a>
-        <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-light" style="width:80px;">NO2</a>
-      {% endif %}
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <div style="margin-top: 250px;">
+              <h4 class="text-primary">In case you want to contact me: </h4>
+              <a class="btn text-primary btn-social-icon btn-google" href="mailto:mayukhbhattacharyya18@gmail.com?Subject=COVID%20Explore"><span class="fa fa-google"></span></a>
+              <a class="btn text-primary btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/mayukh1802/"><span class="fa fa-linkedin"></span></a>
+              <a class="btn text-primary btn-social-icon btn-twitter" href="https://twitter.com/mayukh18"><span class="fa fa-twitter"></span></a>
+          </div>
+      </div>
     </div>
   </div>
 
-  <!-- Page Content -->
-  <div style="margin-left:0px">
-  {{ div | safe }}
-  {{ script | safe }}
-  </div>
   <!-- Bootstrap core JavaScript -->
-
-  <div style="position: absolute;z-index:2;top: 400px;left: 1100px; font-size: 12px;">
-    <p class="font-weight-light text-white">Air Pollution data for NO2 and PM2.5 since the 1st week of 2020. Data latest
-      as of 27th March, 2020. Data as per AQICN.org</p>
-  </div>
-
   <script src="{{ url_for('static', filename='jquery/jquery.slim.min.js') }}"></script>
   <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script>
-    var intervalID;
-  </script>
 
 </body>
 

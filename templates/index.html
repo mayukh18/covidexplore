@@ -23,13 +23,13 @@
 
 </head>
 
-<body>
+<body style="background-color:black;">
 
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">COVID-19 Impacts on the World</a>
+      <a class="navbar-brand"  style="margin-left: -150px;" href="#">COVID Explore : Exploring the impacts of COVID-19</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,7 +47,7 @@
             <a class="nav-link" href="{{ url_for('climate_pm25') }}">The Climate Side</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           </li>
         </ul>
       </div>
@@ -57,9 +57,12 @@
   <!-- Page Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">COVID-19 Data Maps</h1>
-        <p>Corona virus data and impacts around the world.</p>
+      <div class="text-white col-lg-12 text-center" style="margin-top: 200px;">
+        <p>COVID Explore tries to identify and gauge the impact of the COVID-19 crisis on the world.</p>
+          <div style="margin-top: 20px;">
+            <h4 class="mt-5" style="margin-bottom: 10px;">The project COVIDExplore is available on Github</h4>
+            <a role="button" href="https://github.com/mayukh18/covidexplore" class="btn btn-primary">Go to Project</a>
+          </div>
       </div>
     </div>
   </div>

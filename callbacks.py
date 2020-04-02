@@ -5,14 +5,33 @@ def get_callback(identifier, args=None):
     if identifier == 'NO2_slider':
         return CustomJS(args=dict(source=args[0], sc=args[1]), code="""
                 var f = slider.value;
-                console.log("map",Object.keys(map.document._all_models)[0]);
-                var idx = Object.keys(map.document._all_models)[0];
-                console.log("hello", f, map);
+                console.log("map", map);
+                
+                var keys = Object.keys(map.document._all_models);
+                
+                // finding out the index of the one with geo data among all models
+                var idx = -1;
+                for (var i = 0; i < keys.length; i++){
+                    try{
+                        if (typeof map.document._all_models[keys[i]].geojson !== 'undefined'){
+                            idx = i;
+                            break;
+                        }
+                    }
+                    catch(err){
+                        pass;
+                    }
+                }
+                
+                idx = keys[idx];
+                console.log("idx is", idx);
+                
                 for (var i = 0; i < map.document._all_models[idx].data['week'].length; i++){
                     if (map.document._all_models[idx].data['week'][i] != -1){
                         for (var j = 0; j<source.data['week'].length; j++){
                             if (source.data['week'][j] == f && source.data['country'][j] == map.document._all_models[idx].data['country'][i]){
                                 map.document._all_models[idx].data['NO2'][i] = source.data['NO2'][j];
+                                sc.data['NO2'][i] = source.data['NO2'][j];
                                 break;
                             }
                         }
@@ -27,9 +46,26 @@ def get_callback(identifier, args=None):
     elif identifier == 'PM25_slider':
         return CustomJS(args=dict(source=args[0], sc=args[1]), code="""
                 var f = slider.value;
-                console.log("source", source);
-                var idx = Object.keys(map.document._all_models)[0];
-                console.log("hello", f, map.document._all_models[idx].data['week'].length, source);
+                console.log("map", map);
+                
+                var keys = Object.keys(map.document._all_models);
+                
+                // finding out the index of the one with geo data among all models
+                var idx = -1;
+                for (var i = 0; i < keys.length; i++){
+                    try{
+                        if (typeof map.document._all_models[keys[i]].geojson !== 'undefined'){
+                            idx = i;
+                            break;
+                        }
+                    }
+                    catch(err){
+                        pass;
+                    }
+                }
+                
+                idx = keys[idx];
+                console.log("idx is", idx);
                 for (var i = 0; i < map.document._all_models[idx].data['week'].length; i++){
                     if (map.document._all_models[idx].data['week'][i] != -1){
                         for (var j = 0; j<source.data['week'].length; j++){
@@ -73,14 +109,34 @@ def get_callback(identifier, args=None):
                     else
                         elm.style.cursor = 'grab'
                 }
+                else{
+                    console.log("GRABBING");
+                }
             """)
 
     elif identifier == 'dark_slider':
         return CustomJS(args=dict(source=args[0], sc=args[1]), code="""
                 var f = slider.value;
-                console.log("map",Object.keys(map.document._all_models)[0]);
-                var idx = Object.keys(map.document._all_models)[0];
-                console.log("hello", f, map.document._all_models[idx].data['week'].length, source);
+                console.log("map", map);
+                
+                var keys = Object.keys(map.document._all_models);
+                
+                // finding out the index of the one with geo data among all models
+                var idx = -1;
+                for (var i = 0; i < keys.length; i++){
+                    try{
+                        if (typeof map.document._all_models[keys[i]].geojson !== 'undefined'){
+                            idx = i;
+                            break;
+                        }
+                    }
+                    catch(err){
+                        pass;
+                    }
+                }
+                
+                idx = keys[idx];
+                console.log("idx is", idx);
                 for (var i = 0; i < map.document._all_models[idx].data['week'].length; i++){
                     if (map.document._all_models[idx].data['week'][i] != -1){
                         for (var j = 0; j<source.data['week'].length; j++){
@@ -115,4 +171,32 @@ def get_callback(identifier, args=None):
                     clearInterval(intervalID);
                     button.label = '► Play';
                 }
+            """)
+
+    elif identifier == "tap_climate":
+        return CustomJS(args=dict(overall=args[0], curr=args[1]), code="""
+                var idx = cb_data.source.selected.indices[0];
+                var country = cb_data.source.data.country[idx]
+                
+                for (var i=0;i<=overall.data['index'].length;i++){
+                    if (overall.data['country'][i] == country){
+                        curr.data[field_name][overall.data['week'][i] - 1] = overall.data[field_name][i];
+                    }
+                }
+                graph.change.emit();
+                curr.change.emit();
+            """)
+
+    elif identifier == "tap_dark":
+        return CustomJS(args=dict(overall=args[0], curr=args[1]), code="""
+                var idx = cb_data.source.selected.indices[0];
+                var country = cb_data.source.data.country[idx]
+
+                for (var i=0;i<=overall.data['index'].length;i++){
+                    if (overall.data['country'][i] == country){
+                        curr.data[field_name][overall.data['week'][i] - 4] = overall.data[field_name][i];
+                    }
+                }
+                graph.change.emit();
+                curr.change.emit();
             """)
