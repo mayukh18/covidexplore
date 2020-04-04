@@ -1,0 +1,3 @@
+# Dates
+CASES_DATA_UPDATE_DATE = '4th April, 2020'
+CLIMATE_DATA_UPDATE_DATE = '27th March, 2020'
