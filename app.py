@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect
-from flask_talisman import Talisman
 
 import pandas as pd
 import json
@@ -13,11 +12,20 @@ parser.add_argument("--host")
 parser.add_argument("--port")
 
 app = Flask(__name__)
-talisman = Talisman(app, content_security_policy=None)
+
+"""
+@app.before_request
+def before_request():
+    if request.url.startswith('http://'):
+        url = request.url.replace('http://', 'https://', 1)
+        code = 301
+        return redirect(url, code=code)
+"""
 
 # Home page
 @app.route('/')
 def home():
+    print("=================== HEADER ============== ", request.headers["X-Forwarded-Proto"])
     return render_template("index.html")
 
 @app.route('/contact')
