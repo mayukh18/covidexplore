@@ -87,11 +87,11 @@ def get_callback(identifier, args=None):
                 if (button.label == '► Play'){
                     button.label = '❚❚ Pause';
                     intervalID = setInterval(function(){
-                    var year = slider.value + 1;
-                    if (year > 13){
-                        year = 1;
+                    var week = slider.value + 1;
+                    if (week > max_week){
+                        week = 1;
                     }
-                    slider.value = year;
+                    slider.value = week;
                     }, 500);
                 }
                 else{
@@ -161,7 +161,7 @@ def get_callback(identifier, args=None):
                     intervalID = setInterval(function(){
                     var week = slider.value;
                     console.log('play_button', week);
-                    if (week > 13){
+                    if (week > max_week){
                         week = 4;
                     }
                     slider.value = week + 1;

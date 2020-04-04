@@ -134,6 +134,7 @@ def get_cases_plot():
     animate = get_callback('dark_play_button')
     animate.args['button'] = button
     animate.args['slider'] = slider
+    animate.args['max_week'] = max(data1['week'])
     button.js_on_click(animate)
 
     row2 = row(widgetbox(slider), widgetbox(button))
@@ -226,6 +227,7 @@ def get_deaths_plot():
     animate = get_callback('dark_play_button')
     animate.args['button'] = button
     animate.args['slider'] = slider
+    animate.args['max_week'] = max(data2['week'])
     button.js_on_click(animate)
 
     row2 = row(widgetbox(slider), widgetbox(button))

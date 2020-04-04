@@ -135,6 +135,7 @@ def get_NO2_plot():
     animate = get_callback('climate_play_button')
     animate.args['button'] = button
     animate.args['slider'] = slider
+    animate.args['max_week'] = max(data['week'])
     button.js_on_click(animate)
 
     row2 = row(widgetbox(slider), widgetbox(button))
@@ -227,6 +228,7 @@ def get_PM25_plot():
     animate = get_callback('climate_play_button')
     animate.args['button'] = button
     animate.args['slider'] = slider
+    animate.args['max_week'] = max(data['week'])
     button.js_on_click(animate)
 
     row2 = row(widgetbox(slider), widgetbox(button))
