@@ -17,14 +17,11 @@ parser.add_argument("--port")
 
 app = Flask(__name__)
 
-#talisman = Talisman(app, content_security_policy=None)
+talisman = Talisman(app, content_security_policy=None)
 
 
 cases_data_update_date = os.environ.get('CASES_DATA_UPDATE_DATE', config.CASES_DATA_UPDATE_DATE)
 climate_data_update_date = os.environ.get('CLIMATE_DATA_UPDATE_DATE', config.CLIMATE_DATA_UPDATE_DATE)
-
-print("dates", cases_data_update_date, climate_data_update_date)
-
 
 # Home page
 @app.route('/')
@@ -60,5 +57,5 @@ def climate_pm25():
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    app.run(debug=True)
-    #app.run(host=args.host, port=args.port)
+    #app.run(debug=True)
+    app.run(host=args.host, port=args.port)
