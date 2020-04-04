@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
+
 import pandas as pd
 import json
 import numpy as np
@@ -12,6 +13,12 @@ parser.add_argument("--port")
 
 app = Flask(__name__)
 
+@app.before_request
+def before_request():
+    if not request.is_secure and app.env != "development":
+        url = request.url.replace("http://", "https://", 1)
+        code = 301
+        return redirect(url, code=code)
 
 # Home page
 @app.route('/')
@@ -47,4 +54,6 @@ def climate_pm25():
 
 if __name__ == '__main__':
     args = parser.parse_args()
+    #app.env = "development"
+    #print(app.env)
     app.run(host=args.host, port=args.port)
