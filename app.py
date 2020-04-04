@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+from flask_talisman import Talisman
 
 import pandas as pd
 import json
@@ -12,13 +13,7 @@ parser.add_argument("--host")
 parser.add_argument("--port")
 
 app = Flask(__name__)
-
-@app.before_request
-def before_request():
-    if not request.is_secure and app.env != "development":
-        url = request.url.replace("http://", "https://", 1)
-        code = 301
-        return redirect(url, code=code)
+talisman = Talisman(app, content_security_policy=None)
 
 # Home page
 @app.route('/')
