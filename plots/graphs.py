@@ -1,6 +1,6 @@
 from bokeh.plotting import figure, output_file, show
-from bokeh.models import Slider, HoverTool, TapTool, CustomJS, ColumnDataSource, Range1d
-
+from bokeh.models import Slider, HoverTool, TapTool, CustomJS, ColumnDataSource, Range1d, Band
+from callbacks import get_callback
 
 def get_graph(df, field, op):
     g = figure(plot_width=400, plot_height=200, outline_line_color='white', outline_line_alpha=0, background='black',
@@ -30,7 +30,13 @@ def get_graph(df, field, op):
     df[field+"_W"] = df[field]
     print(df)
     CurrC = ColumnDataSource(df)
-
+    print(CurrC.data)
 
     g.line('week', field, source=CurrC, line_width=2, alpha=1.0, color='blue')
+    g.circle('week', field, source=CurrC)
+
+    hover = HoverTool(tooltips=[('Week', '@week'), ('Counts', '@count_true')],
+                      callback=get_callback('hover_cursor'))
+    g.tools = [hover]
+
     return g, CurrC
