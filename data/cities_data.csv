@@ -1,0 +1,401 @@
+,Rank,City,Country,Growth,Population
+0,1,Tokyo,Japan,0.34,37.28
+1,2,Mumbai (Bombay),India,2.32,25.97
+2,3,Delhi,India,3.48,25.83
+3,4,Dhaka,Bangladesh,3.79,22.04
+4,5,Mexico City,Mexico,0.90,21.81
+5,6,SÃ£o Paulo,Brazil,1.06,21.57
+6,7,Lagos,Nigeria,4.44,21.51
+7,8,Jakarta,Indonesia,3.03,20.77
+8,9,New York,USA,0.66,20.43
+9,10,Karachi,Pakistan,3.19,18.94
+10,11,Calcutta,India,1.74,18.54
+11,12,Buenos Aires,Argentina,0.97,15.48
+12,13,Cairo,Egypt,1.56,14.02
+13,14,Metro Manila,Philippines,1.55,13.40
+14,15,Los Angeles,USA,0.58,13.25
+15,16,Rio de Janeiro,Brazil,0.93,13.23
+16,17,Istanbul,Turkey,1.75,12.76
+17,18,Shanghai,China,0.00,12.63
+18,19,Moscow,Russia,0.58,11.73
+19,20,"Osaka, Kobe",Japan,0.13,11.53
+20,21,Beijing,China,0.19,11.15
+21,22,Lima,Peru,1.53,10.32
+22,23,Paris,France,0.21,10.18
+23,24,Tianjin,China,0.55,10.14
+24,25,Lahore,Pakistan,3.12,10.10
+25,26,BogotÃ¡,Colombia,1.84,10.08
+26,27,Kinshasa,Congo,3.89,10.04
+27,28,Bangalore,India,2.79,9.92
+28,29,Chicago,USA,0.80,9.84
+29,30,Wuhan,China,2.87,9.18
+30,31,Seoul,South Korea,-0.50,8.88
+31,32,Chennai (Madras),India,1.68,8.88
+32,33,Tehran,Iran,1.28,8.86
+33,34,Riyadh,Saudi Arabia,3.09,8.82
+34,35,Hyderabad,India,2.21,8.61
+35,36,Baghdad,Iraq,2.37,8.41
+36,37,Hong Kong,China,0.97,8.33
+37,38,Chittagong,Bangladesh,4.29,7.87
+38,39,Ahmadabad,India,2.73,7.78
+39,40,Bangkok,Thailand,1.11,7.76
+40,41,Surat,India,4.99,7.72
+41,42,London,UK,-0.02,7.59
+42,43,Pune (Poona),India,3.46,7.53
+43,44,Belo Horizonte,Brazil,1.99,7.18
+44,45,Ho Chi Minh City,Vietnam,2.07,6.79
+45,46,Santiago,Chile,1.17,6.71
+46,47,"Dortmund, Bochum",Germany,0.04,6.61
+47,48,Miami,USA,1.32,6.59
+48,49,Kabul,Afghanistan,4.74,6.56
+49,50,Khartoum,Sudan,2.41,6.46
+50,51,Atlanta,USA,2.64,6.44
+51,52,Toronto,Canada,1.48,6.34
+52,53,Chongqing,China,1.46,6.20
+53,54,Bandung,Indonesia,2.90,6.19
+54,55,Jidda,Saudi Arabia,2.93,5.94
+55,56,Philadelphia,USA,0.67,5.88
+56,57,Yangon,Myanmar,2.46,5.87
+57,58,"Dallas, Fort Worth",USA,1.53,5.83
+58,59,Beihai,China,10.58,5.82
+59,60,Hanoi,Vietnam,2.26,5.78
+60,61,Houston,USA,1.61,5.49
+61,62,Madrid,Spain,0.30,5.39
+62,63,St Petersburg,Russia,0.05,5.39
+63,64,Shenyang,China,0.51,5.30
+64,65,BrasÃ­lia,Brazil,2.99,5.25
+65,66,Singapore,Singapore,1.13,5.24
+66,67,Sydney,Australia,1.09,5.18
+67,68,Dar es Salaam,Tanzania,4.39,5.12
+68,69,Abidjan,CÃ´te d'Ivoire,2.49,5.11
+69,70,Casablanca,Morocco,2.07,5.09
+70,71,Boston,USA,1.07,5.08
+71,72,Luanda,Angola,3.96,5.06
+72,73,Nairobi,Kenya,3.87,5.02
+73,74,Algiers,Algeria,2.74,4.93
+74,75,Washington DC,USA,1.03,4.90
+75,76,Ankara,Turkey,1.97,4.85
+76,77,East Rand (Ekurhuleni),South Africa,2.89,4.82
+77,78,Jaipur,India,3.60,4.79
+78,79,Alexandria,Egypt,1.62,4.77
+79,80,Addis Ababa,Ethiopia,3.40,4.76
+80,81,"Phoenix, Mesa",USA,2.10,4.69
+81,82,Johannesburg,South Africa,2.20,4.67
+82,83,PÃ´rto Alegre,Brazil,1.26,4.60
+83,84,Guadalajara,Mexico,1.03,4.56
+84,85,Barcelona,Spain,0.14,4.52
+85,86,Kanpur,India,2.53,4.44
+86,87,Fortaleza,Brazil,1.95,4.39
+87,88,Salvador,Brazil,1.80,4.38
+88,89,MedellÃ­n,Colombia,1.98,4.38
+89,90,Recife,Brazil,1.39,4.36
+90,91,Detroit,USA,0.52,4.29
+91,92,Monterrey,Mexico,1.27,4.27
+92,93,Melbourne,Australia,0.99,4.26
+93,94,Chengdu,China,1.17,4.14
+94,95,Faisalabad,Pakistan,3.32,4.13
+95,96,Kano,Nigeria,2.34,4.07
+96,97,Curitiba,Brazil,2.18,4.00
+97,98,Guangzhou,China,0.16,3.97
+98,99,Cape Town,South Africa,1.44,3.92
+99,100,Lucknow,India,2.72,3.89
+100,101,Tel Aviv-Jaffa,Israel,1.64,3.87
+101,102,Changchun,China,1.47,3.85
+102,103,Toluca,Mexico,4.25,3.82
+103,104,MontrÃ©al,Canada,0.54,3.81
+104,105,Campinas,Brazil,2.37,3.78
+105,106,"Frankfurt, Wiesbaden",Germany,0.09,3.78
+106,107,Surabaja,Indonesia,2.19,3.77
+107,108,Caracas,Venezuela,0.94,3.76
+108,109,Xian,China,0.95,3.75
+109,110,Pyongyang,North Korea,0.80,3.72
+110,111,Valencia,Venezuela,3.05,3.72
+111,112,"San Francisco, Oakland",USA,0.70,3.71
+112,113,Milan,Italy,-0.46,3.71
+113,114,Cali,Colombia,2.28,3.66
+114,115,Dakar,Senegal,3.06,3.64
+115,116,Seattle,USA,1.32,3.62
+116,117,Aleppo,Syria,2.42,3.60
+117,118,Patna,India,3.72,3.60
+118,119,"DÃ¼sseldorf, Essen",Germany,0.27,3.48
+119,120,Guayaquil,Ecuador,2.36,3.41
+120,121,Athens,Greece,0.30,3.39
+121,122,Izmir,Turkey,1.96,3.37
+122,123,Sana'a,Yemen,5.00,3.36
+123,124,Berlin,Germany,0.01,3.33
+124,125,Nagpur,India,2.26,3.31
+125,126,Ibadan,Nigeria,2.20,3.28
+126,127,Port-au-Prince,Haiti,2.98,3.27
+127,128,San Diego,USA,0.92,3.24
+128,129,Pusan,Republic of Korea,-0.55,3.23
+129,130,Indore,India,3.35,3.21
+130,131,BelÃ©m,Brazil,2.79,3.20
+131,132,Durban,South Africa,1.14,3.19
+132,133,Zibo,China,0.86,3.15
+133,134,"Cologne, Bonn",Germany,0.09,3.14
+134,135,Antananarivo,Madagascar,3.73,3.13
+135,136,Damascus,Syria,2.01,3.11
+136,137,Changsha,China,2.80,3.10
+137,138,Nanjing,China,0.63,3.08
+138,139,Guiyang,China,1.47,3.07
+139,140,Accra,Ghana,2.93,3.05
+140,141,Maracaibo,Venezuela,2.19,3.04
+141,142,Inch'on,South Korea,0.90,3.04
+142,143,"Fukuoka, Kitakyushu",Japan,0.50,3.04
+143,144,Dalian,China,0.74,3.02
+144,145,Douala,Cameroon,2.71,2.99
+145,146,Jinan,China,0.79,2.98
+146,147,Medan,Indonesia,2.33,2.97
+147,148,Harbin,China,0.09,2.93
+148,149,"Minneapolis, St. Paul",USA,0.97,2.93
+149,150,Las Vegas,USA,3.45,2.92
+150,151,Rawalpindi,Pakistan,3.31,2.92
+151,152,Zhengzhou,China,1.70,2.89
+152,153,Taiyuan,China,0.94,2.89
+153,154,Qingdao,China,1.07,2.85
+154,155,"Denver, Aurora",USA,1.62,2.85
+155,156,AsunciÃ³n,Paraguay,3.17,2.82
+156,157,Tripoli,Libya,1.91,2.79
+157,158,Heze,China,2.78,2.79
+158,159,Ghaziabad,India,5.20,2.76
+159,160,Stuttgart,Germany,0.10,2.75
+160,161,Naples,Italy,-0.33,2.75
+161,162,Mashhad,Iran,1.64,2.73
+162,163,Liuan,China,2.05,2.73
+163,164,Hamburg,Germany,0.07,2.72
+164,165,Wanxian,China,2.17,2.71
+165,166,GoiÃ¢nia,Brazil,2.40,2.71
+166,167,Zaozhuang,China,1.39,2.69
+167,168,"Tampa, St. Petersburg",USA,1.23,2.69
+168,169,Rabat,Morocco,2.45,2.69
+169,170,Katowice,Poland,-0.52,2.67
+170,171,Barranquilla,Colombia,2.12,2.65
+171,172,YaoundÃ©,Cameroon,2.80,2.65
+172,173,Bamako,Mali,4.45,2.64
+173,174,Kiev,Ukraine,-0.02,2.62
+174,175,San Juan,Puerto Rico,0.57,2.61
+175,176,Vancouver,Canada,1.33,2.60
+176,177,Palembang,Indonesia,2.94,2.59
+177,178,Tunis,Tunisia,1.51,2.59
+178,179,Hangzhou,China,1.88,2.59
+179,180,Faridabad,India,4.44,2.58
+180,181,Manaus,Brazil,2.83,2.57
+181,182,Handan,China,1.28,2.56
+182,183,Tianmen,China,1.83,2.56
+183,184,Beirut,Lebanon,1.95,2.54
+184,185,Taegu,South Korea,0.06,2.54
+185,186,Nashik,India,3.90,2.52
+186,187,Baltimore,USA,0.89,2.49
+187,188,Conakry,Guinea,3.61,2.48
+188,189,Bhopal,India,2.69,2.48
+189,190,Liupanshui,China,1.03,2.47
+190,191,Vadodara,India,2.55,2.47
+191,192,Hai Phong,Vietnam,2.07,2.45
+192,193,Gujranwala,Pakistan,3.49,2.45
+193,194,Santa Cruz,Bolivia,3.98,2.45
+194,195,Rome,Italy,-0.46,2.43
+195,196,Kampala,Uganda,4.03,2.42
+196,197,Taipei,China,-0.11,2.42
+197,198,Khulna,Bangladesh,3.24,2.42
+198,199,Linyi,China,1.14,2.41
+199,200,Tijuana,Mexico,2.77,2.40
+200,201,Portland,USA,1.80,2.37
+201,202,Santo Domingo,Dominican Republic,1.39,2.37
+202,203,Agra,India,2.93,2.36
+203,204,Coimbatore,India,2.49,2.36
+204,205,Munich,Germany,0.10,2.36
+205,206,Ludhiana,India,2.63,2.34
+206,207,St. Louis,USA,0.62,2.33
+207,208,Tashkent,Uzbekistan,0.53,2.33
+208,209,Jinxi,China,1.48,2.30
+209,210,Zhanjiang,China,2.59,2.29
+210,211,Multan,Pakistan,3.06,2.28
+211,212,Xiantao,China,1.73,2.27
+212,213,Wenzhou,China,2.90,2.27
+213,214,Vienna,Austria,0.19,2.26
+214,215,Mecca,Saudi Arabia,2.56,2.24
+215,216,Warsaw,Poland,0.07,2.23
+216,217,Maputo,Mozambique,3.54,2.21
+217,218,Grande VitÃ³ria,Brazil,2.13,2.21
+218,219,Havana,Cuba,0.04,2.20
+219,220,Shijiazhuang,China,1.60,2.20
+220,221,Brisbane,Australia,1.36,2.18
+221,222,Bursa,Turkey,2.85,2.17
+222,223,Nanchang,China,1.48,2.17
+223,224,Birmingham,UK,-0.12,2.17
+224,225,"Yulin, Guangxi",China,1.67,2.17
+225,226,Ciudad JuÃ¡rez,Mexico,2.51,2.16
+226,227,Manchester,UK,-0.13,2.15
+227,228,Tangshan,China,1.27,2.14
+228,229,Yantai,China,1.48,2.13
+229,230,"Riverside, San Bernardino",USA,1.57,2.13
+230,231,Yiyang,China,2.31,2.13
+231,232,Esfahan,Iran,2.12,2.12
+232,233,Baixada Santista,Brazil,1.70,2.12
+233,234,Hyderabad,Pakistan,2.91,2.12
+234,235,Luoyang,China,1.90,2.11
+235,236,Mogadishu,Somalia,3.52,2.11
+236,237,Yancheng,China,1.50,2.10
+237,238,Wulumuqi (Urumqi),China,1.98,2.10
+238,239,Lisbon,Portugal,0.37,2.09
+239,240,Xuzhou,China,1.48,2.08
+240,241,Rajkot,India,3.63,2.07
+241,242,Meerut,India,2.83,2.04
+242,243,Shantou,China,2.77,2.04
+243,244,Peshawar,Pakistan,3.29,2.04
+244,245,CÃ³rdoba,Argentina,1.62,2.03
+245,246,Visakhapatnam,India,2.17,2.03
+246,247,Quito,Ecuador,1.94,2.03
+247,248,Asansol,India,3.11,2.02
+248,249,Lanzhou,China,0.80,2.01
+249,250,La Paz,Bolivia,1.81,2.01
+250,251,Cleveland,USA,0.62,2.01
+251,252,Baku,Azerbaijan,0.61,2.00
+252,253,Sapporo,Japan,0.56,1.99
+253,254,Lubumbashi,Congo,4.10,1.99
+254,255,Lusaka,Zambia,2.14,1.99
+255,256,Harare,Zimbabwe,1.73,1.98
+256,257,Puebla,Mexico,0.34,1.96
+257,258,Sacramento,USA,1.51,1.94
+258,259,Davao,Philippines,2.53,1.94
+259,260,Kunming,China,0.69,1.93
+260,261,Stockholm,Sweden,0.67,1.92
+261,262,Pittsburgh,USA,0.52,1.92
+262,263,Suwon,Republic of Korea,3.23,1.91
+263,264,San Salvador,El Salvador,1.68,1.90
+264,265,Kochi (Cochin),India,1.75,1.90
+265,266,Mosul,Iraq,2.86,1.89
+266,267,Kaduna,Nigeria,2.40,1.89
+267,268,Changde,China,1.57,1.87
+268,269,LeÃ³n,Mexico,1.73,1.87
+269,270,Brazzaville,Congo,3.29,1.87
+270,271,Shenzhen,China,2.51,1.86
+271,272,Suining,China,1.33,1.85
+272,273,Tabriz,Iran,1.86,1.84
+273,274,San Jose,USA,0.88,1.84
+274,275,Jamshedpur,India,2.59,1.83
+275,276,Karaj,Iran,2.59,1.82
+276,277,Cincinnati,USA,0.92,1.81
+277,278,Kyoto,Japan,-0.03,1.80
+278,279,Indianapolis,USA,1.75,1.80
+279,280,Perth,Australia,1.25,1.79
+280,281,"Pingxiang, Jiangxi",China,0.91,1.79
+281,282,Amritsar,India,2.85,1.78
+282,283,Ujung Pandang,Indonesia,2.63,1.78
+283,284,Amman,Jordan,2.05,1.76
+284,285,Pretoria,South Africa,1.99,1.76
+285,286,Minsk,Belarus,0.12,1.74
+286,287,Kuala Lumpur,Malaysia,1.53,1.74
+287,288,Taian,China,0.76,1.73
+288,289,Dhanbad,India,2.46,1.73
+289,290,MaceiÃ³,Brazil,2.75,1.72
+290,291,Jilin,China,0.95,1.72
+291,292,Xinghua,China,0.55,1.72
+292,293,Managua,Nicaragua,2.62,1.71
+293,294,Jabalpur,India,2.17,1.71
+294,295,Taejon,South Korea,0.97,1.70
+295,296,Nanning,China,1.31,1.70
+296,297,Kwangju,South Korea,0.97,1.69
+297,298,San Antonio,USA,1.13,1.68
+298,299,Kaohsiung,China,0.73,1.68
+299,300,Huainan,China,1.08,1.67
+300,301,Varanasi (Benares),India,1.68,1.67
+301,302,Orlando,USA,1.65,1.67
+302,303,Austin,USA,2.69,1.67
+303,304,Neijiang,China,0.90,1.66
+304,305,"Mannheim, Heidelberg",Germany,0.10,1.65
+305,306,San JosÃ©,Costa Rica,2.42,1.64
+306,307,Adana,Turkey,1.76,1.63
+307,308,Weifang,China,1.20,1.63
+308,309,Shiraz,Iran,1.85,1.62
+309,310,Virginia Beach,USA,0.74,1.61
+310,311,Kansas City,USA,0.83,1.61
+311,312,Basra,Iraq,1.98,1.60
+312,313,Hefei,China,1.30,1.60
+313,314,Phnom Penh,Cambodia,2.05,1.59
+314,315,Srinagar,India,2.50,1.59
+315,316,Nampho,North Korea,1.87,1.59
+316,317,Allahabad,India,2.09,1.58
+317,318,Mianyang,China,1.97,1.57
+318,319,Tianshui,China,1.40,1.56
+319,320,Rosario,Argentina,1.13,1.55
+320,321,Yueyang,China,1.27,1.55
+321,322,Baotou,China,0.85,1.55
+322,323,Qiqihar,China,0.42,1.54
+323,324,Tegucigalpa,Honduras,2.51,1.54
+324,325,Huaian,China,1.12,1.53
+325,326,Zaoyang,China,1.58,1.53
+326,327,Lyon,France,0.53,1.53
+327,328,Maracay,Venezuela,1.94,1.53
+328,329,Calgary,Canada,2.32,1.52
+329,330,Anshan,China,0.27,1.52
+330,331,Suqian,China,1.23,1.51
+331,332,Fushun,China,0.36,1.50
+332,333,"Suzhou, Jiangsu",China,1.48,1.50
+333,334,Jingmen,China,1.34,1.50
+334,335,Taichung,China,2.28,1.50
+335,336,Budapest,Hungary,-0.68,1.49
+336,337,Bucaramanga,Colombia,2.17,1.49
+337,338,Yongzhou,China,1.55,1.49
+338,339,Madurai,India,1.19,1.48
+339,340,Milwaukee,USA,0.65,1.48
+340,341,"Columbus, Ohio",USA,1.24,1.47
+341,342,"Marseille, Aix-en-Provence",France,0.36,1.46
+342,343,Kuwait City,Kuwait,1.09,1.46
+343,344,Porto,Portugal,0.70,1.45
+344,345,"Fuzhou, Fujian",China,0.21,1.44
+345,346,Montevideo,Uruguay,0.42,1.44
+346,347,Vijayawada,India,1.81,1.43
+347,348,Mendoza,Argentina,1.90,1.43
+348,349,Wuxi,China,1.21,1.43
+349,350,Bucharest,Romania,-1.30,1.43
+350,351,Yuzhou,China,1.01,1.42
+351,352,Providence,USA,0.92,1.41
+352,353,"Jining, Shandong",China,1.61,1.40
+353,354,Xintai,China,0.33,1.40
+354,355,Auckland,New Zealand,1.22,1.39
+355,356,Leeds,UK,-0.09,1.38
+356,357,Novosibirsk,Russia,-0.36,1.36
+357,358,Nanchong,China,1.48,1.34
+358,359,Bielefeld,Germany,0.11,1.34
+359,360,Chifeng,China,1.07,1.34
+360,361,Ottawa,Canada,1.08,1.32
+361,362,Kharkov,Ukraine,-0.58,1.31
+362,363,Hannover,Germany,0.06,1.31
+363,364,Leshan,China,0.75,1.31
+364,365,Zigong,China,1.04,1.31
+365,366,Daqing,China,0.89,1.27
+366,367,Ningbo,China,0.44,1.27
+367,368,Helsinki,Finland,0.83,1.26
+368,369,Amsterdam,Netherlands,0.55,1.26
+369,370,Memphis,USA,1.16,1.24
+370,371,Adelaide,Australia,0.57,1.24
+371,372,NÃ¼rnberg,Germany,0.11,1.23
+372,373,Fuyu,China,0.94,1.23
+373,374,Yixing,China,0.56,1.23
+374,375,TorreÃ³n,Mexico,0.97,1.22
+375,376,"Newcastle, Gateshead",UK,0.94,1.22
+376,377,Huzhou,China,0.63,1.21
+377,378,Xinyi,China,1.08,1.20
+378,379,Ekaterinburg,Russia,-0.52,1.19
+379,380,Dublin,Ireland,0.94,1.19
+380,381,Rotterdam,Netherlands,0.41,1.18
+381,382,Xiaoshan,China,0.30,1.18
+382,383,Ulsan,South Korea,0.60,1.17
+383,384,Nizhni Novgorod,Russia,-0.67,1.17
+384,385,Prague,Czech Republic,-0.14,1.14
+385,386,Belgrade,Serbia,-0.07,1.10
+386,387,Copenhagen,Denmark,0.17,1.10
+387,388,Lille,France,0.42,1.10
+388,389,Rostov-on-Don,Russia,0.05,1.09
+389,390,Aachen,Germany,0.09,1.09
+390,391,Kazan,Russia,-0.17,1.09
+391,392,Turin,Italy,-0.56,1.08
+392,393,Omsk,Russia,-0.38,1.08
+393,394,Almaty,Kazakhstan,-0.16,1.07
+394,395,Datong,China,-0.25,1.07
+395,396,New Orleans,USA,0.35,1.05
+396,397,Samara,Russia,-0.64,1.04
+397,398,Volgograd,Russia,-0.15,1.00
+398,399,Yerevan,Armenia,-0.49,0.99
+399,400,Chelyabinsk,Russia,-0.54,0.99
