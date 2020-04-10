@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explore the impacts of the Coronavirus on different aspects of the society and the world.">
+  <meta name="author" content="Mayukh Bhattacharyya">
+
+  <title>COVID Explore</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel='shortcut icon' type='image/x-icon' href='{{ url_for("static", filename="favicon.ico") }}' />
+    <link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.0.0.min.css" type="text/css">
+
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-api-2.0.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.0.0.min.js"></script>
+  <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body style="background-color:black;">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top">
+    <div class="container">
+      <a class="navbar-brand"  style="margin-left: -150px;" href="#">COVID Explore</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('cases_confirmed') }}">The Dark Side</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('climate_pm25') }}">The Climate Side
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <h2 class="text-white" style="margin-top:10px;margin-left:75px;">Confirmed Count:</h2>
+    <div class="col-sm-4" style="margin-top:10px;">
+      {% if toggle == True %}
+        <a role="button" href="{{ url_for('cases_confirmed') }}" class="btn btn-light" style="width:80px;">Cases</a>
+        <a role="button" href="{{ url_for('cases_deaths') }}" class="btn btn-outline-light" style="width:80px;">Deaths</a>
+      {% else %}
+        <a role="button" href="{{ url_for('cases_confirmed') }}" class="btn btn-outline-light" style="width:80px;">Cases</a>
+        <a role="button" href="{{ url_for('cases_deaths') }}" class="btn btn-light" style="width:80px;">Deaths</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div style="margin-left:0px">
+  {{ div | safe }}
+  {{ script | safe }}
+  </div>
+  <!-- Bootstrap core JavaScript -->
+
+  <div style="position: absolute;z-index:2;top: 400px;left: 1100px; font-size: 12px;">
+    <p class="font-weight-light text-white">Cases and deaths counts across the world since 4th week of 2020 (22nd Jan).
+        Data latest as of {{ date }}. Data as per WHO reports.</p>
+  </div>
+  <script src="{{ url_for('static', filename='jquery/jquery.slim.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script>
+    var intervalID;
+  </script>
+
+</body>
+
+</html>

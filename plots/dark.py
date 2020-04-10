@@ -57,7 +57,7 @@ def get_cases_plot():
     merged_df['week'].fillna(-1, inplace=True)
 
     # get the line plot
-    dark_graph, CurrC = get_graph(data1, field="count_true", op="sum")
+    dark_graph, CurrC = get_graph(data1, field="count_true", op="sum", title="Total number of confirmed cases per weeks")
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -151,7 +151,7 @@ def get_deaths_plot():
     merged_df['week'].fillna(-1, inplace=True)
 
     # get the line plot
-    dark_graph, CurrC = get_graph(data2, field="count_true", op="sum")
+    dark_graph, CurrC = get_graph(data2, field="count_true", op="sum", title="Total number of deaths per weeks")
 
     def json_data(selectedWeek):
         week = selectedWeek

@@ -7,8 +7,9 @@ import pandas as pd
 
 from flask import Flask, render_template, request, redirect
 from flask_talisman import Talisman
-from plots.climate import get_PM25_plot, get_NO2_plot
+from plots.climate import get_PM25_plot, get_NO2_plot, get_PM25_plot_diff, get_NO2_plot_diff
 from plots.dark import get_cases_plot, get_deaths_plot
+from plots.finance import get_finance_plot
 import config
 
 parser = argparse.ArgumentParser()
@@ -46,13 +47,34 @@ def cases_deaths():
 @app.route('/NO2')
 def climate_no2():
     script, div = get_NO2_plot()
-    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=False)
+    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=1)
 
 # PM25 page
 @app.route('/PM25')
 def climate_pm25():
     script, div = get_PM25_plot()
-    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=True)
+    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=0)
+
+
+# 2019 NO2 page
+@app.route('/NO2_19')
+def climate_no2_19():
+    script, div = get_NO2_plot_diff()
+    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=3)
+
+
+# 2019 PM25 page
+@app.route('/PM25_19')
+def climate_pm25_19():
+    script, div = get_PM25_plot_diff()
+    return render_template("climate.html", script=script, div=div, date=climate_data_update_date, toggle=2)
+
+# 2019 NO2 page
+@app.route('/finance')
+def finance():
+    script, div = get_finance_plot()
+    return render_template("finance.html", script=script, div=div, date=climate_data_update_date, toggle=3)
+
 
 
 if __name__ == '__main__':

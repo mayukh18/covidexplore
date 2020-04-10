@@ -187,6 +187,20 @@ def get_callback(identifier, args=None):
                 curr.change.emit();
             """)
 
+    elif identifier == "tap_climate_diff":
+        return CustomJS(args=dict(overall=args[0], curr=args[1]), code="""
+                var idx = cb_data.source.selected.indices[0];
+                var country = cb_data.source.data.country[idx]
+
+                for (var i=0;i<=overall.data['index'].length;i++){
+                    if (overall.data['country'][i] == country){
+                        curr.data[field_name][overall.data['week'][i] - 5] = overall.data[field_name][i];
+                    }
+                }
+                graph.change.emit();
+                curr.change.emit();
+            """)
+
     elif identifier == "tap_dark":
         return CustomJS(args=dict(overall=args[0], curr=args[1]), code="""
                 var idx = cb_data.source.selected.indices[0];

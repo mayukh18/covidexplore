@@ -56,12 +56,26 @@
   <div class="row">
     <h2 class="text-white" style="margin-top:10px;margin-left:75px;">Air Quality Index:</h2>
     <div class="col-sm-4" style="margin-top:10px;">
-      {% if toggle == True %}
+      {% if toggle == 0 %}
         <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-light" style="width:80px;">PM2.5</a>
         <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-outline-light" style="width:80px;">NO2</a>
-      {% else %}
+        <a role="button" href="{{ url_for('climate_pm25_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 NO2</a>
+      {% elif toggle == 1 %}
         <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-outline-light" style="width:80px;">PM2.5</a>
         <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-light" style="width:80px;">NO2</a>
+      <a role="button" href="{{ url_for('climate_pm25_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 NO2</a>
+      {% elif toggle == 2 %}
+        <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-outline-light" style="width:80px;">PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-outline-light" style="width:80px;">NO2</a>
+      <a role="button" href="{{ url_for('climate_pm25_19') }}" class="btn btn-light" style="width:120px;">20/19 PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 NO2</a>
+      {% elif toggle == 3 %}
+        <a role="button" href="{{ url_for('climate_pm25') }}" class="btn btn-outline-light" style="width:80px;">PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2') }}" class="btn btn-outline-light" style="width:80px;">NO2</a>
+      <a role="button" href="{{ url_for('climate_pm25_19') }}" class="btn btn-outline-light" style="width:120px;">20/19 PM2.5</a>
+        <a role="button" href="{{ url_for('climate_no2_19') }}" class="btn btn-light" style="width:120px;">20/19 NO2</a>
       {% endif %}
     </div>
   </div>
@@ -74,8 +88,23 @@
   <!-- Bootstrap core JavaScript -->
 
   <div style="position: absolute;z-index:2;top: 400px;left: 1100px; font-size: 12px;">
-    <p class="font-weight-light text-white">Air Pollution data for NO2 and PM2.5 since the 1st week of 2020. Data latest
+    {% if toggle == 0 %}
+    <p class="font-weight-light text-white">Air Pollution data for PM2.5 since the 1st week of 2020. Data latest
       as of {{ date }}. Data as per AQICN.org</p>
+    {% elif toggle == 1 %}
+    <p class="font-weight-light text-white">Air Pollution data for NO2 since the 1st week of 2020. Data latest
+      as of {{ date }}. Data as per AQICN.org</p>
+    {% elif toggle == 2 %}
+    <p class="font-weight-light text-white">Week-to-week comparison of PM2.5 concentration over the world between 2020 and 2019
+      since the 1st week of February in each year. The values are percentage changes for a week in 2020 compared
+      to the same week in 2019. A positive value means PM2.5 concentration has increased in 2020 whereas a negative value means
+      it has decreased. Data latest as of {{ date }}. Data as per AQICN.org</p>
+    {% elif toggle == 3 %}
+    <p class="font-weight-light text-white">Week-to-week comparison of NO2 concentration over the world between 2020 and 2019
+      since the 1st week of February in each year. The values are percentage changes for a week in 2020 compared
+      to the same week in 2019. A positive value means NO2 concentration has increased in 2020 whereas a negative value means
+      it has decreased. Data latest as of {{ date }}. Data as per AQICN.org</p>
+    {% endif %}
   </div>
 
   <script src="{{ url_for('static', filename='jquery/jquery.slim.min.js') }}"></script>
