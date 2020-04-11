@@ -444,3 +444,5 @@ def get_PM25_plot_diff():
     script, div = components(layout)
 
     return script, div
+
+

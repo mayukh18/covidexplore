@@ -20,7 +20,7 @@ from .graphs import get_graph
 
 
 shapefile = 'data/countries_110m/ne_110m_admin_0_countries.shp'
-datafile = 'data/SampleWeekly.csv'
+datafile = 'data/finance_indexes_percent.csv'
 
 replacements = {'USA':'United States of America',
                'Korea, South':'South Korea',
@@ -34,8 +34,7 @@ gdf = gdf.drop(gdf.index[159]) # Antarctica
 gdf.head()
 
 data = pd.read_csv(datafile)
-data['country'] = data['Country']
-data['week'] = data['Week']
+#data.drop(["Volume", "Date"], axis=1, inplace=True)
 
 for c in replacements:
     data['country'].replace(c, replacements[c], inplace=True)
@@ -45,7 +44,7 @@ def get_finance_plot():
     merged_df['week'].fillna(-1, inplace=True)
 
     # get the line plot
-    dark_graph, CurrC = get_graph(data, field="Close", op="sum", title="market indices vs. weeks")
+    finance_graph, CurrC = get_graph(data, field="Close", op="mean", title="market indices vs. weeks")
 
     def json_data(selectedWeek):
         week = selectedWeek
@@ -63,10 +62,9 @@ def get_finance_plot():
 
     # Define a sequential multi-hue color palette.
     palette = brewer['OrRd'][5]
-    palette = palette[::-1]
 
     # Instantiate LinearColorMapper that linearly maps numbers in a range, into a sequence of colors. Input nan_color.
-    color_mapper = LinearColorMapper(palette=palette, low=0, high=5, nan_color='#1c1c1c')
+    color_mapper = LinearColorMapper(palette=palette, low=50, high=100, nan_color='#1c1c1c')
 
     # Create color bar.
     color_bar = ColorBar(color_mapper=color_mapper, label_standoff=5, width=15, height=200,
@@ -98,9 +96,9 @@ def get_finance_plot():
     hover = HoverTool(tooltips=[('Country', '@country'), ('cases', '@Close')], callback=get_callback('hover_cursor'))
 
     # Add Tap tool
-    tap_cb = get_callback('tap_dark', args=[Overall, CurrC])
+    tap_cb = get_callback('tap_finance', args=[Overall, CurrC])
     tap = TapTool(callback=tap_cb)
-    tap_cb.args["graph"] = dark_graph
+    tap_cb.args["graph"] = finance_graph
     tap_cb.args["field_name"] = "Close"
 
     # add tools to figure
@@ -108,15 +106,15 @@ def get_finance_plot():
 
 
     # slider object
-    slider = Slider(title='Week', start=4, end=max(data['week']), step=1, value=4, margin=(0,0,0,250), orientation="horizontal", width=300)
-    callback = get_callback('dark_slider', [Overall, Curr])
+    slider = Slider(title='Week', start=1, end=max(data['week']), step=1, value=1, margin=(0,0,0,250), orientation="horizontal", width=300)
+    callback = get_callback('finance_slider', [Overall, Curr])
     slider.js_on_change('value', callback)
     callback.args["slider"] = slider
     callback.args["map"] = p
 
     # play button
     button = Button(label='► Play', width=300, margin=(12,0,0,20))
-    animate = get_callback('dark_play_button')
+    animate = get_callback('finance_play_button')
     animate.args['button'] = button
     animate.args['slider'] = slider
     animate.args['max_week'] = max(data['week'])
@@ -124,7 +122,7 @@ def get_finance_plot():
 
     row2 = row(widgetbox(slider), widgetbox(button))
     layout = column(p, row2)
-    layout = row(layout, dark_graph)
+    layout = row(layout, finance_graph)
     curdoc().add_root(layout)
     script, div = components(layout)
 

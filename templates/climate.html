@@ -47,6 +47,9 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('finance') }}">The Finance Side</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
           </li>
         </ul>
@@ -105,6 +108,9 @@
       to the same week in 2019. A positive value means NO2 concentration has increased in 2020 whereas a negative value means
       it has decreased. Data latest as of {{ date }}. Data as per AQICN.org</p>
     {% endif %}
+    <br>
+    <br>
+    <a role="button" href="{{ url_for('downloadFile', idx=toggle) }}" class="btn btn-outline-warning" style="width:150px;">Download Data</a>
   </div>
 
   <script src="{{ url_for('static', filename='jquery/jquery.slim.min.js') }}"></script>

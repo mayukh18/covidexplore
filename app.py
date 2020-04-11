@@ -5,7 +5,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_file
 from flask_talisman import Talisman
 from plots.climate import get_PM25_plot, get_NO2_plot, get_PM25_plot_diff, get_NO2_plot_diff
 from plots.dark import get_cases_plot, get_deaths_plot
@@ -75,7 +75,17 @@ def finance():
     script, div = get_finance_plot()
     return render_template("finance.html", script=script, div=div, date=climate_data_update_date, toggle=3)
 
+@app.route('/download/<int:idx>')
+def downloadFile(idx):
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    data_dir = os.path.join(dir_path, "data")
 
+    if idx < 2:
+        path = os.path.join(data_dir, "aqi_df.csv")
+        return send_file(path, as_attachment=True)
+    else:
+        path = os.path.join(data_dir, "aqi_df_diff.csv")
+        return send_file(path, as_attachment=True)
 
 if __name__ == '__main__':
     args = parser.parse_args()
